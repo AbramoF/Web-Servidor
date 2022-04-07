@@ -27,12 +27,37 @@
     </nav>
 
     <form action="/action_page.php">
-        <label for="veg">Opção vegetariana : </label>
-        <input type="text" id="veg" name="vegetariano" placeholder="Opção vegetariana...">
-    
+        
+        <label class="container">
+            <input type="checkbox" id="arroz" nome="arroz"> Arroz
+            <span class="checkmark"></span>
+          </label>
+          <label class="arroz integral"> Arroz Integral
+            <input type="checkbox" id="arrozInt" name="arrozIntegral">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Macarrão
+            <input type="checkbox" id="maca" name="macarrao">
+            <span class="checkmark"></span>
+          </label>
+        </label>
+
+
+        <label for="sal1">Primeira opção de salada : </label>
+        <input type="text" id="sal1" name="salada1" placeholder="Primeira opção de salada...">
+        
+        <label for="sal2">Segunda opção de salada : </label>
+        <input type="text" id="sal2" name="salada2" placeholder="Segunda opção de salada...">
+        
         <label for="carn">Opção carnívora : </label>
         <input type="text" id="carn" name="carnivoro" placeholder="Opção carnívora...">
-    
+        
+        <label for="veg">Opção vegetariana : </label>
+        <input type="text" id="veg" name="vegetariano" placeholder="Opção vegetariana...">
+        
+        <label for="carn">Opção carnívora : </label>
+        <input type="text" id="carn" name="carnivoro" placeholder="Opção carnívora...">
+
         <label for="horario">Horário : </label>
         <select id="hora" name="horario">
             <option value="11:00-14:00">Manhã 11:00-14:00</option>

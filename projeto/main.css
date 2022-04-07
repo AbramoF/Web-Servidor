@@ -86,8 +86,8 @@ input[type=text],select{/*form cadastro do cardapio*/
 
 input[type=submit] {
   width: 200px;
-  background-color: rgb(55, 52, 53);
-  color: white;
+  background-color: rgb(254, 203, 41);
+  color: rgb(55, 52, 53);
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -97,8 +97,8 @@ input[type=submit] {
 
 input[type=submit]:hover {
   width: 200px;
-  background-color: rgb(254, 203, 41);
-  color: rgb(55, 52, 53);
+  background-color: rgb(55, 52, 53);
+  color: rgb(254, 203, 41);
 }
 
 /*form cadastro do cardapio fim*/
