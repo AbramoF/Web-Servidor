@@ -31,7 +31,7 @@ li a {
 }
   
 li a:hover:not(.active) {
-  background-color: rgba(254, 204, 41, 0.784);
+  background-color: rgba(254, 203, 41, 0.784);
   color: rgb(55, 52, 53);
 }
   
@@ -76,7 +76,11 @@ td,th{
   text-align: center;
 }
 tr:hover{  
-  background-color: rgba(254, 204, 41, 0.523);
+  background-color: rgba(254, 203, 41);
+}
+
+tr:hover:not(.head){
+  background-color: rgba(254, 203, 41, 0.584);
 }
 
 .head{
