@@ -9,12 +9,11 @@
     </head>
     <body>
     
-        <div class="header">
+
             <picture>
                 <source media="(min-width: 640px)" srcset="utfpr.png" > <!--banner grande-->
                 <img src="utfpr.png" alt="Banner" style="width:auto;"> <!--banner peq-->
-            </picture>
-        </div>
+
 
     <nav>
         <ul>
@@ -26,54 +25,91 @@
         </ul>
     </nav>
 
+
+    
+    <div class="flex-container">
+    <br>
     <form action="/action_page.php">
+        <div>
+            <label for="arroz">Arroz </label>
+            <input type="checkbox" id="arroz" nome="arroz" checked>
+        </div>
+    <br>
+        <div>
+            <label for="arrozIntegral">Arroz Integral</label>
+            <input type="checkbox" id="arrozInt" name="arrozIntegral" title="arroz integral" checked>
+        </div>
+    <br>
+        <div>
+            <label for="macarrao"> Macarrão </label>
+            <input type="checkbox" id="maca" name="macarrao" title="macarrao">
+        </div>
+         
+       <br>
         
-        <label class="container">
-            <input type="checkbox" id="arroz" nome="arroz"> Arroz
-            <span class="checkmark"></span>
-          </label>
-          <label class="arroz integral"> Arroz Integral
-            <input type="checkbox" id="arrozInt" name="arrozIntegral">
-            <span class="checkmark"></span>
-          </label>
-          <label class="container">Macarrão
-            <input type="checkbox" id="maca" name="macarrao">
-            <span class="checkmark"></span>
-          </label>
-        </label>
-
-
-        <label for="sal1">Primeira opção de salada : </label>
-        <input type="text" id="sal1" name="salada1" placeholder="Primeira opção de salada...">
+        <div>
+            <label for="sal1">Primeira opção de salada : </label>
+            <input type="text" id="sal1" name="salada1" required placeholder="Primeira opção de salada...">
+        </div>
+            
+       
         
-        <label for="sal2">Segunda opção de salada : </label>
-        <input type="text" id="sal2" name="salada2" placeholder="Segunda opção de salada...">
-        
-        <label for="carn">Opção carnívora : </label>
-        <input type="text" id="carn" name="carnivoro" placeholder="Opção carnívora...">
-        
-        <label for="veg">Opção vegetariana : </label>
-        <input type="text" id="veg" name="vegetariano" placeholder="Opção vegetariana...">
-        
-        <label for="carn">Opção carnívora : </label>
-        <input type="text" id="carn" name="carnivoro" placeholder="Opção carnívora...">
-
-        <label for="horario">Horário : </label>
-        <select id="hora" name="horario">
-            <option value="11:00-14:00">Manhã 11:00-14:00</option>
-            <option value="17:30-20:30">Tarde 17:30-20:30</option>
-        </select>
+        <div>
+            <label for="sal2">Segunda opção de salada : </label>
+            <input type="text" id="sal2" name="salada2" required placeholder="Segunda opção de salada...">
+        </div>
+            
       
+
+        <div>
+            <label for="carn">Opção carnívora : </label>
+            <input type="text" id="carn" name="carnivoro" required placeholder="Opção carnívora...">
+        </div>
+            
+        
+
+        <div>
+            <label for="veg">Opção vegetariana : </label>
+            <input type="text" id="veg" name="vegetariano" required placeholder="Opção vegetariana...">
+        </div>
+            
+       
+
+        <div>
+            <label for="acomp"></label>Acompanhamento : </label>
+            <input type="text" id="acomp" name="acompanhamento" required placeholder="Opção acompanhamento...">
+        </div>
+            
+     
+
+        <div>
+
+            Horario: 
+            <select name="horario" title="horario" required>
+                <option value="almoco">Almoço 11:00-14:00</option>
+                <option value="janta">Janta 17:30-20:30</option>
+            </select>
+        </div>
+
+<br>
+            
         <input type="submit" value="Submit">
     </form>
+</div>
+
+
+<br>
+<hr>
+<br>
 
 <footer>
-    <address>
-        UTFPR<BR>
-        Avenida Monteiro Lobato<br>
-        Ponta Grossa<br>
-        (42)4002-8922
-    </address>
+<address>
+    UTFPR<BR>
+    R. Doutor Washington Subtil Chueire, 330<br>
+    Jardim Carvalho<br>
+    Ponta Grossa<br>
+    (42)4002-8922
+</address>
 </footer>
 
 </body>

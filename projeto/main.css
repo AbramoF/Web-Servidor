@@ -1,6 +1,6 @@
 
 body {        /*estilo do corpo*/
-  font-size: 28px;
+  font-size: 22px;
   color: rgb(0, 0, 0);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(255, 255, 255);
@@ -76,7 +76,16 @@ tr:hover:not(.head){
 }       /*cardapio fim*/
 
 input[type=text],select{/*form cadastro do cardapio*/
-  width: 50%;
+  width: auto;
+  padding:12px 14px;
+  margin:8px 0;
+  display: inline-block;
+  border: 2px solid rgb(55, 52, 53);
+  box-sizing: border-box;
+}
+
+input[type=password]{/*form cadastro do cardapio*/
+  width: auto;
   padding:12px 14px;
   margin:8px 0;
   display: inline-block;
@@ -85,7 +94,7 @@ input[type=text],select{/*form cadastro do cardapio*/
 }
 
 input[type=submit] {
-  width: 200px;
+  width: 29rem;
   background-color: rgb(254, 203, 41);
   color: rgb(55, 52, 53);
   padding: 14px 20px;
@@ -96,9 +105,25 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  width: 200px;
+  width: 29rem;
   background-color: rgb(55, 52, 53);
   color: rgb(254, 203, 41);
 }
 
 /*form cadastro do cardapio fim*/
+
+div {
+
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 4px;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

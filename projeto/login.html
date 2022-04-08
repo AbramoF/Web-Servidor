@@ -9,12 +9,12 @@
     </head>
     <body>
     
-        <div class="header">
+
             <picture>
                 <source media="(min-width: 640px)" srcset="utfpr.png" > <!--banner grande-->
                 <img src="utfpr.png" alt="Banner" style="width:auto;"> <!--banner peq-->
             </picture>
-        </div>
+
 
     <nav>
         <ul>
@@ -25,11 +25,29 @@
         </ul>
     </nav>
 
+<br>
+    <div>
+        <form action="login.php" method="post">
+
+            <label for="login">Usuário : </label>
+            <input type="text" id="username" name="loginUser" required placeholder="Digite seu usuário...">
+
+            <label for="login">Senha : </label>
+            <input type="password" id="password" name="loginSenha" required placeholder="Digite sua senha...">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+    <br>
+    <hr>
+    <br>
     
 <footer>
     <address>
         UTFPR<BR>
-        Avenida Monteiro Lobato<br>
+        R. Doutor Washington Subtil Chueire, 330<br>
+        Jardim Carvalho<br>
         Ponta Grossa<br>
         (42)4002-8922
     </address>
