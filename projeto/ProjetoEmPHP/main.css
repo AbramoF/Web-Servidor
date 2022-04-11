@@ -127,3 +127,7 @@ div {
   justify-content: center;
   align-items: center;
 }
+
+.right{
+  float: right;
+}

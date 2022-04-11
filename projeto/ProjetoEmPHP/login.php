@@ -1,12 +1,12 @@
 <?php
-$usuario = $_POST['user'] ?? '';
-$senha = $_POST['senha'] ?? '';
+$usuario = $_POST['loginUser'] ?? '';
+$senha = $_POST['loginSenha'] ?? '';
 $erro = false;
 
 session_start(); //AshgdjagJAgsda
 
 // checar se as credenciais do usuario estão ok
-if ($usuario == 'admin' && $senha == 'qwe123') {
+if ($usuario == 'admin' && $senha == '123456') {
     $_SESSION['logado'] = true;
     $_SESSION['usuario'] = 'Administrador';
     $_SESSION['cartao'] = '411111111111111';
@@ -36,7 +36,7 @@ if (!empty($_SESSION['logado']) && $_SESSION['logado']) {
 
             <picture>
                 <source media="(min-width: 640px)" srcset="utfpr.png" > <!--banner grande-->
-                <img src="utfpr.png" alt="Banner" style="width:auto;"> <!--banner peq-->
+                <img src="utfpr.png" alt="Banner"> <!--banner peq-->
             </picture>
 
 
@@ -44,8 +44,8 @@ if (!empty($_SESSION['logado']) && $_SESSION['logado']) {
         <ul>
             <li><a href="cardapioDia.php">Cardápio Do Dia</a></li>
             <li><a href="calendario.php">Calendário</a></li>
-            <li style="float:right"><a href="contato.php">Contato</a></li>
-            <li style="float:right" class="active"><a style="color:rgb(55, 52, 53)" href="login.php">Login</a></li>
+            <li class="right"><a href="contato.php">Contato</a></li>
+            <li class="right" ><a class="active" href="login.php">Login</a></li>
         </ul>
     </nav>
 

@@ -20,17 +20,17 @@ if(empty($_SESSION['logado']) || $_SESSION['logado']==false)
 
             <picture>
                 <source media="(min-width: 640px)" srcset="utfpr.png" > <!--banner grande-->
-                <img src="utfpr.png" alt="Banner" style="width:auto;"> <!--banner peq-->
+                <img src="utfpr.png" alt="Banner"> <!--banner peq-->
             </picture>
 
 
     <nav>
         <ul>
             <li><a  href="cardapioDiaAdm.php">Cardápio Do Dia</a></li>
-            <li class="active"><a style="color:rgb(55, 52, 53)" href="calendarioAdm.php">Calendário</a></li>
+            <li><a class="active" href="calendarioAdm.php">Calendário</a></li>
             <li ><a href="cadCardapioAdm.php">Cadastrar Cardápio</a></li>
-            <li style="float:right"><a href="contatoAdm.php">Contato</a></li>
-            <li style="float:right"><a href="login.php">Login</a></li>
+            <li class="right"><a href="contatoAdm.php">Contato</a></li>
+            <li class="right"><a href="login.php">Login</a></li>
         </ul>
     </nav>
 

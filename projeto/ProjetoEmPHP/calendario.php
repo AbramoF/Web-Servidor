@@ -12,16 +12,16 @@
 
             <picture>
                 <source media="(min-width: 640px)" srcset="utfpr.png" > <!--banner grande-->
-                <img src="utfpr.png" alt="Banner" style="width:auto;"> <!--banner peq-->
+                <img src="utfpr.png" alt="Banner"> <!--banner peq-->
             </picture>
 
 
     <nav>
         <ul>
             <li><a  href="cardapioDia.php">Cardápio Do Dia</a></li>
-            <li class="active"><a style="color:rgb(55, 52, 53)" href="calendario.php">Calendário</a></li>
-            <li style="float:right"><a href="contato.php">Contato</a></li>
-            <li style="float:right"><a href="login.php">Login</a></li>
+            <li ><a class="active" href="calendario.php">Calendário</a></li>
+            <li class="right"><a href="contato.php">Contato</a></li>
+            <li class="right"><a href="login.php">Login</a></li>
         </ul>
     </nav>
 
