@@ -1,3 +1,27 @@
+<?php
+$usuario = $_POST['user'] ?? '';
+$senha = $_POST['senha'] ?? '';
+$erro = false;
+
+session_start(); //AshgdjagJAgsda
+
+// checar se as credenciais do usuario estão ok
+if ($usuario == 'admin' && $senha == 'qwe123') {
+    $_SESSION['logado'] = true;
+    $_SESSION['usuario'] = 'Administrador';
+    $_SESSION['cartao'] = '411111111111111';
+
+    header('Location: logado.php');
+} else if (!empty($_POST)) {
+    $erro = true;
+}
+
+//Checar se o usuário já está logado
+if (!empty($_SESSION['logado']) && $_SESSION['logado']) {
+    header('Location: logado.php');
+}
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -18,10 +42,10 @@
 
     <nav>
         <ul>
-            <li><a href="cardapioDia.html">Cardápio Do Dia</a></li>
-            <li><a href="calendario.html">Calendário</a></li>
-            <li style="float:right"><a href="contato.html">Contato</a></li>
-            <li style="float:right" class="active"><a style="color:rgb(55, 52, 53)" href="login.html">Login</a></li>
+            <li><a href="cardapioDia.php">Cardápio Do Dia</a></li>
+            <li><a href="calendario.php">Calendário</a></li>
+            <li style="float:right"><a href="contato.php">Contato</a></li>
+            <li style="float:right" class="active"><a style="color:rgb(55, 52, 53)" href="login.php">Login</a></li>
         </ul>
     </nav>
 

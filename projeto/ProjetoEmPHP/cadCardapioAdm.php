@@ -26,11 +26,11 @@ if(empty($_SESSION['logado']) || $_SESSION['logado']==false)
 
     <nav>
         <ul>
-            <li><a href="cardapioDia.html">Cardápio Do Dia</a></li>
-            <li><a href="calendario.html">Calendário</a></li>
-            <li style="float:right"><a href="contato.html">Contato</a></li>
-            <li style="float:right"><a href="login.html">Login</a></li>
-            <li style="float:right"class="active"><a style="color:rgb(55, 52, 53)" href="cadCardapioAdm.html">Cadastrar Cardápio</a></li>
+            <li><a href="cardapioDiaAdm.php">Cardápio Do Dia</a></li>
+            <li><a href="calendarioAdm.php">Calendário</a></li>
+            <li class="active"><a style="color:rgb(55, 52, 53)" href="cadCardapioAdm.php">Cadastrar Cardápio</a></li>
+            <li style="float:right"><a href="contatoAdm.php">Contato</a></li>
+            <li style="float:right"><a href="login.php">Login</a></li>
         </ul>
     </nav>
 

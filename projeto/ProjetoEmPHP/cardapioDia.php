@@ -16,10 +16,10 @@
 
     <nav>
         <ul>
-            <li class="active"><a style="color:rgb(55, 52, 53)" href="cardapioDia.html">Cardápio Do Dia</a></li>
-            <li><a href="calendario.html">Calendário</a></li>
-            <li style="float:right"><a href="contato.html">Contato</a></li>
-            <li style="float:right"><a href="login.html">Login</a></li>
+            <li class="active"><a style="color:rgb(55, 52, 53)" href="cardapioDia.php">Cardápio Do Dia</a></li>
+            <li><a href="calendario.php">Calendário</a></li>
+            <li style="float:right"><a href="contato.php">Contato</a></li>
+            <li style="float:right"><a href="login.php">Login</a></li>
         </ul>
     </nav>
 
