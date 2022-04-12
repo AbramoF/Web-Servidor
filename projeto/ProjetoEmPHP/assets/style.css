@@ -4,6 +4,7 @@ body {        /*estilo do corpo*/
   color: rgb(0, 0, 0);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(255, 255, 255);
+  margin:0;
 }
 footer{  /*estilo do foot*/
   font-size: 20px;
@@ -126,8 +127,27 @@ div {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-width: 40%;
+  margin-top: 3rem;
 }
 
 .right{
   float: right;
+}
+
+
+.box-login {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+}
+
+.submit-button {
+  width: 50% !important;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }

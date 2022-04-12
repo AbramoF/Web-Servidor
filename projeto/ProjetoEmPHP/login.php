@@ -1,11 +1,9 @@
 <?php
-
-
 $usuario = $_POST['loginUser'] ?? '';
 $senha = $_POST['loginSenha'] ?? '';
 $erro = false;
 
-session_start();
+session_start(); //AshgdjagJAgsda
 
 // checar se as credenciais do usuario estão ok
 if ($usuario == 'admin' && $senha == '123456') {
@@ -52,16 +50,17 @@ if (!empty($_SESSION['logado']) && $_SESSION['logado']) {
     </nav>
 
 <br>
-    <div>
-        <form action="login.php" method="post">
+    <div style="max-width: 40%">
+        <form class="box-login" action="login.php" method="post">
 
             <label for="login">Usuário : </label>
             <input type="text" id="username" name="loginUser" required placeholder="Digite seu usuário...">
 
             <label for="login">Senha : </label>
             <input type="password" id="password" name="loginSenha" required placeholder="Digite sua senha...">
-
-            <input type="submit" value="Submit">
+            <div class="button">
+                <input class="submit-button" type="submit" value="Submit">
+            </div>
         </form>
     </div>
     
