@@ -8,7 +8,7 @@ if(empty($_SESSION['logado']) || $_SESSION['logado']==false)
 
 <!DOCTYPE html>
 
-<html>SDAS
+<html>
 
     <head>
         <meta charset='utf-8'>
