@@ -1,9 +1,11 @@
 <?php
+
+
 $usuario = $_POST['loginUser'] ?? '';
 $senha = $_POST['loginSenha'] ?? '';
 $erro = false;
 
-session_start(); //AshgdjagJAgsda
+session_start();
 
 // checar se as credenciais do usuario estão ok
 if ($usuario == 'admin' && $senha == '123456') {

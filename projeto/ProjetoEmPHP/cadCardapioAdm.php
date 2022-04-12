@@ -71,8 +71,8 @@ if(empty($_SESSION['logado']) || $_SESSION['logado']==false)
       
 
         <div>
-            <label for="carn">Opção carnívora : </label>
-            <input type="text" id="carn" name="carnivoro" required placeholder="Opção carnívora...">
+            <label for="carn">Carne : </label>
+            <input type="text" id="carn" name="carnivoro" required placeholder="Carne do dia...">
         </div>
             
         
@@ -96,7 +96,7 @@ if(empty($_SESSION['logado']) || $_SESSION['logado']==false)
             Horario: 
             <select name="horario" title="horario" required>
                 <option value="almoco">Almoço 11:00-14:00</option>
-                <option value="janta">Janta 17:30-20:30</option>
+                <option value="janta">Jantar 17:30-20:30</option>
             </select>
         </div>
 
