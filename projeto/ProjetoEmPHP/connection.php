@@ -1,6 +1,6 @@
 <?php
 
-class Conexao {
+class Connection {
     private static $bd;
 
     public static function get() {
