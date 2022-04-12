@@ -1,12 +1,15 @@
 <?php
 
-try 
-{
+class Conexao {
+    private static $bd;
 
-    $bd = new mysqli('localhost', 'root', '', 'WebServidor');
-    $bd -> set_charset('utf-8');
-
-}catch(Exception $e)
-{
-    throw new Exception('Erro de Conexão com o Banco: ' + $e -> getMessage());
+    public static function get() {
+        try {
+            if(!isset(self::$bd))
+                self::$bd = new PDO("mysql:host=localhost;dbname=WebServidor", "root", "");
+            return self::$bd;
+        } catch(Exception $e) {
+            throw new Exception($e->getMessage());
+        }
+    }
 }
