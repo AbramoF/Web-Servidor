@@ -38,7 +38,7 @@ if(empty($_SESSION['logado']) || $_SESSION['logado']==false)
     
     <div class="flex-container">
     <br>
-    <form action="/cadastro.php" method="post">
+    <form action="cardapioDiaAdm.php" method="post">
         <div>
             <label for="arroz">Arroz </label>
             <input type="checkbox" id="arroz" nome="arroz" checked>
