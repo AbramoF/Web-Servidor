@@ -12,7 +12,7 @@ if ($usuario == 'admin' && $senha == 'qwe123') {
 
     header('Location: logado.php');
 } else if (!empty($_POST)) {
-    $erro = 10;
+    header('Location: error.php');
 }
 
 //Checar se o usuário já está logado
