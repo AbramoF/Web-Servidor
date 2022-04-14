@@ -1,7 +1,7 @@
 <?php
 $usuario = $_POST['loginUser'] ?? '';
 $senha = $_POST['loginSenha'] ?? '';
-$erro = false;
+$erro = 0;
 
 session_start(); //AshgdjagJAgsda
 
@@ -12,7 +12,7 @@ if ($usuario == 'admin' && $senha == 'qwe123') {
 
     header('Location: logado.php');
 } else if (!empty($_POST)) {
-    $erro = true;
+    $erro = 10;
 }
 
 //Checar se o usuário já está logado

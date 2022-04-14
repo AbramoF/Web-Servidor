@@ -18,19 +18,20 @@ $cardapio=[
     $dia = $_POST['horario']
 ];
 
-    print_r($menu);
+
     $array = $_SESSION['array'];
     foreach($array as $key){
         for($x=1 ; $x<13 ; $x++){
-            if($cardapio.$dia==$x){
-                if($key.$dia==$x){
+            if($cardapio->dia==$x){
+                if($key->dia==$x){
                     $_SESSION['erro']=20;
                     $repetido=1;
                 }
             }            
         } 
     }
-    
+    if($repetido!=1)
+        array_push($array,$cardapio);
     //print_r($usuario1);
 
     //print_r($array); die();
