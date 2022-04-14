@@ -74,7 +74,7 @@ if (!empty($_SESSION['logado']) && $_SESSION['logado']) {
             $array =[];
         }
         else{
-            $array = $_SESSION['array'];
+            $array = $_SESSION["array"];
         }
     ?>
 

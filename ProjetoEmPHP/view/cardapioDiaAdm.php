@@ -56,13 +56,13 @@ if(empty($_SESSION['logado']) || $_SESSION['logado']==false)
         if(isset($_SESSION['array'])){
             $array1= $_SESSION['array'];
             foreach($array1 as $array){
-                foreach($array as $indice=>$dia)
-                    $info=$dia['dia'];
-                    echo "$info";
+                foreach($array as $indice=>$info){
+                        echo "<td>";
+                        print_r($info);
+                        echo "<td>";
+                    }
+                }
             }
-
-        }
-
 
         
             ?>

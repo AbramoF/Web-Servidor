@@ -30,35 +30,40 @@ $repetido=false;
         ];
 
 
-        $array[] = $_SESSION['array'];
-        if($array)
-        foreach($array as $key){
-            for($x=1 ; $x<13 ; $x++){
-                if($cardapio->$dia==$x){
-                    if($key->$dia==$x){
-                if($cardapio->dia==$x){
-                    if($key->dia==$x){
-                        $_SESSION['erro']=20;
-                        $repetido=1;
-                    }
-                }            
-            } 
-        }
-}}
-else{
-    array_push($array, $cardapio);
-    $_SESSION['array'] = $array;
+$array[] = $_SESSION['array'];
+foreach($array as $key){
+    for($x=1 ; $x<13 ; $x++){
+        if($cardapio['dia']==$x){
+            if($key['cardapio']['dia']==$x){
+                $_SESSION['erro']=20;
+                $repetido=1;
+            }
+        }            
+    } 
+}
+
+
+$array_count = (count($_SESSION['array'])-1);
+for($i=$array_count;$i>0;$i--)
+{
+if($_SESSION[$i]['dia']==$cardapio['dia'])
+{
+    break;
+    $repetido=true;
+}
 }
 
 
 
 if($repetido!=true)
-array_push($array, $cardapio);
+array_push($_SESSION['array'],$cardapio);
+   
 
 $_SESSION['array'] = $array;
+
 header("Location: ../view/cadCardapioAdm.php");
 }
 //implementar o erro se nao tem todos os dados necesssarios
-}
 
+}
 ?>

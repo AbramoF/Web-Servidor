@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+
+if(empty($_SESSION['logado']) || $_SESSION['logado']==false)
+    header('Location: login.php')
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -11,14 +19,15 @@
     
     <picture>
         <source media="(min-width: 640px)" srcset="../assets/utfpr.png" > <!--banner grande-->
-        <img src="../assets/utfpr.png" alt="Banner" > <!--banner peq-->
+        <img src="../assets/utfpr.png" alt="Banner"> <!--banner peq-->
     </picture>
 
     <nav>
         <ul>
-            <li><a class="active" href="cardapioDia.php">Cardápio Do Dia</a></li>
-            <li><a href="calendario.php">Calendário</a></li>
-            <li class="right"><a href="contato.php">Contato</a></li>
+            <li><a class="active" href="cardapioDiaAdm.php">Cardápio Do Dia</a></li>
+            <li><a href="calendarioAdm.php">Calendário</a></li>
+            <li ><a href="cadCardapioAdm.php">Cadastrar Cardápio</a></li>
+            <li class="right"><a href="contatoAdm.php">Contato</a></li>
             <li class="right"><a href="login.php">Login</a></li>
         </ul>
     </nav>
@@ -42,21 +51,22 @@
     </tr>
     <tr>
         <td>11:00 - 14:00</td>
-
         <?php
+
         if(isset($_SESSION['array'])){
             $array1= $_SESSION['array'];
             foreach($array1 as $array){
-                foreach($array as $indice=>$info){
-
-                
-
-                
-                        echo "<td>{$info}<td>";
-                    }
-                }
+                foreach($array as $indice=>$dia)
+                    $info=$dia['dia'];
+                    echo "$info";
             }
+
+        }
+
+
+        
             ?>
+
     </tr>
     <tr>
         <td>17:30 - 20:30</td>

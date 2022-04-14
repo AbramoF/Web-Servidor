@@ -44,18 +44,19 @@
         <td>11:00 - 14:00</td>
 
         <?php
-        if(isset($_SESSION['array'])){
-            $array1= $_SESSION['array'];
-            foreach($array1 as $array){
-                foreach($array as $indice=>$info){
-
-                
-
-                
-                        echo "<td>{$info}<td>";
-                    }
+        session_start();
+        if (isset($_SESSION['array'])){
+            $array = $_SESSION['array'];
+            foreach ($array as $key=>$carne) {
+                for($x=1 ; $x<7 ; $x++){
+                    if($key['cardapio']['dia']==$x)
+                    echo "<td>'$carne</td>";
+                    
                 }
+                
             }
+        }
+        echo "<td> oi<td>"
             ?>
     </tr>
     <tr>
