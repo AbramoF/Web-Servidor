@@ -3,12 +3,14 @@ $usuario = $_POST['loginUser'] ?? '';
 $senha = $_POST['loginSenha'] ?? '';
 $erro = 0;
 
+
 session_start(); //AshgdjagJAgsda
 
 // checar se as credenciais do usuario estão ok
 if ($usuario == 'admin' && $senha == 'qwe123') {
     $_SESSION['logado'] = true;
     $_SESSION['usuario'] = 'Administrador';
+    $_SESSION['erro'] = 0;
 
     header('Location: logado.php');
 } else if (!empty($_POST)) {
@@ -72,7 +74,7 @@ if (!empty($_SESSION['logado']) && $_SESSION['logado']) {
             $array =[];
         }
         else{
-            $array = $_SESSION['array'];
+            $array = $_SESSION["array"];
         }
     ?>
 

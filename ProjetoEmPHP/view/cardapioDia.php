@@ -42,13 +42,22 @@
     </tr>
     <tr>
         <td>11:00 - 14:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
 
+        <?php
+        session_start();
+        if (isset($_SESSION['array'])){
+            $array = $_SESSION['array'];
+            foreach ($array as $key=>$carne) {
+                for($x=1 ; $x<7 ; $x++){
+                    if($key['cardapio']['dia']==$x)
+                    echo "<td>'$carne</td>";
+                    
+                }
+                
+            }
+        }
+        echo "<td> oi<td>"
+            ?>
     </tr>
     <tr>
         <td>17:30 - 20:30</td>

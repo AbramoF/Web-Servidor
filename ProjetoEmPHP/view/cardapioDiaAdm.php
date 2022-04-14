@@ -51,12 +51,21 @@ if(empty($_SESSION['logado']) || $_SESSION['logado']==false)
     </tr>
     <tr>
         <td>11:00 - 14:00</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <?php
+
+        if(isset($_SESSION['array'])){
+            $array1= $_SESSION['array'];
+            foreach($array1 as $array){
+                foreach($array as $indice=>$dia)
+                    $info=$dia['dia'];
+                    echo "$info";
+            }
+
+        }
+
+
+        
+            ?>
 
     </tr>
     <tr>
