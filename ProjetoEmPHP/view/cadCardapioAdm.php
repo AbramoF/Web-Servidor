@@ -14,15 +14,14 @@ if(empty($_SESSION['logado']) || $_SESSION['logado']==false)
     <head>
         <meta charset='utf-8'>
         <title>RU UTFPR</title>
-        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
     </head>
     <body>
     
 
             <picture>
-                <source media="(min-width: 640px)" srcset="utfpr.png" > <!--banner grande-->
-                <source media="(min-width: 640px)" srcset="utfpr.png" > <!--banner grande-->
-                <img src="utfpr.png" alt="Banner"> <!--banner peq-->
+                <source media="(min-width: 640px)" srcset="../assets/utfpr.png" > <!--banner grande-->
+                <img src="../assets/utfpr.png" alt="Banner"> <!--banner peq-->
 
 
     <nav>
@@ -39,78 +38,66 @@ if(empty($_SESSION['logado']) || $_SESSION['logado']==false)
     
     <div class="flex-container">
     <br>
-    <form action="/cadastro.php" method="post">
-        <div>
-            <label for="arroz">Arroz </label>
-            <input type="checkbox" id="arroz" nome="arroz" checked>
-        </div>
-    <br>
-        <div>
-            <label for="arrozIntegral">Arroz Integral</label>
-            <input type="checkbox" id="arrozInt" name="arrozIntegral" title="arroz integral" checked>
-        </div>
-    <br>
-        <div>
-            <label for="macarrao"> Macarrão </label>
-            <input type="checkbox" id="maca" name="macarrao" title="macarrao">
-        </div>
-         
+    <form action="..\control\cadastro.control.php" method="post">
+
        <br>
         
         <div>
             <label for="sal1">Primeira opção de salada : </label>
-            <input type="text" id="sal1" name="salada1" required placeholder="Primeira opção de salada...">
+            <input type="text" id="sal1" name="sal1" required placeholder="Primeira opção de salada...">
         </div>
             
        
         
         <div>
             <label for="sal2">Segunda opção de salada : </label>
-            <input type="text" id="sal2" name="salada2" required placeholder="Segunda opção de salada...">
+            <input type="text" id="sal2" name="sal2" required placeholder="Segunda opção de salada...">
         </div>
             
       
 
         <div>
             <label for="carn">Opção carnívora : </label>
-            <input type="text" id="carn" name="carnivoro" required placeholder="Opção carnívora...">
+            <input type="text" id="carn" name="carn" required placeholder="Opção carnívora...">
         </div>
             
         
 
         <div>
             <label for="veg">Opção vegetariana : </label>
-            <input type="text" id="veg" name="vegetariano" required placeholder="Opção vegetariana...">
+            <input type="text" id="veg" name="veg" required placeholder="Opção vegetariana...">
         </div>
             
        
 
         <div>
             <label for="acomp"></label>Acompanhamento : </label>
-            <input type="text" id="acomp" name="acompanhamento" required placeholder="Opção acompanhamento...">
+            <input type="text" id="acomp" name="acompa" required placeholder="Opção acompanhamento...">
         </div>
             
      
 
         <div>
 
-            Horario: 
-            <select name="horario" title="horario" required>
-                <option value="almoco">Almoço 11:00-14:00</option>
-                <option value="janta">Janta 17:30-20:30</option>
-            </select>
-        </div>
-
-        <div>
-
             Dia da semana: 
             <select name="dia" title="dia" required>
-                <option value="segunda">Segunda-feira</option>
-                <option value="terca">Terça-feira</option>
-                <option value="quarta">Quarta-feira</option>
-                <option value="quinta">Quinta-feira</option>
-                <option value="sexta">Sexta-feira</option>
-                <option value="sabado">Sábado</option>
+                <option value="1">Segunda-feira - Almoço</option>
+                <option value="2">Segunda-feira - Janta</option>
+
+                <option value="3">Terça-feira - Almoço</option>
+                <option value="4">Terça-feira - Janta</option>
+
+                <option value="5">Quarta-feira - Almoço</option>
+                <option value="6">Quarta-feira - Janta</option>
+
+                <option value="7">Quinta-feira - Almoço</option>
+                <option value="8">Quinta-feira - Janta</option>
+
+                <option value="9">Sexta-feira - Almoço</option>
+                <option value="10">Sexta-feira - Janta</option>
+
+                <option value="11">Sábado - Almoço</option>
+                <option value="12">Sábado - Janta</option>
             </select>
         </div>
 

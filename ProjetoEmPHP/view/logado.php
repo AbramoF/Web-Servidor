@@ -13,14 +13,14 @@
     <head>
         <meta charset='utf-8'>
         <title>RU UTFPR</title>
-        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
     </head>
     <body>
     
 
             <picture>
-                <source media="(min-width: 640px)" srcset="utfpr.png" > <!--banner grande-->
-                <img src="utfpr.png" alt="Banner"> <!--banner peq-->
+                <source media="(min-width: 640px)" srcset="../assets/utfpr.png" > <!--banner grande-->
+                <img src="../assets/utfpr.png" alt="Banner"> <!--banner peq-->
             </picture>
 
 
@@ -30,7 +30,7 @@
             <li><a href="calendarioAdm.php">Calendário</a></li>
             <li><a href="cadCardapioAdm.php">Cadastrar Cardápio</a></li>
             <li class="right"><a href="contatoAdm.php">Contato</a></li>
-            <li class="right"><a class="active" href="logout.php">Logout</a></li>
+            <li class="right"><a class="active" href="../logout.php">Logout</a></li>
         </ul>
     </nav>
 
@@ -39,7 +39,6 @@
         Você já esta logado!
 
         
-        <a href="logout.php">Sair</a>
     </div>
     
     <br>

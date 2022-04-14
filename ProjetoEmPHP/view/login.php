@@ -6,10 +6,9 @@ $erro = false;
 session_start(); //AshgdjagJAgsda
 
 // checar se as credenciais do usuario estão ok
-if ($usuario == 'admin' && $senha == '123456') {
+if ($usuario == 'admin' && $senha == 'qwe123') {
     $_SESSION['logado'] = true;
     $_SESSION['usuario'] = 'Administrador';
-    $_SESSION['cartao'] = '411111111111111';
 
     header('Location: logado.php');
 } else if (!empty($_POST)) {
@@ -29,14 +28,14 @@ if (!empty($_SESSION['logado']) && $_SESSION['logado']) {
     <head>
         <meta charset='utf-8'>
         <title>RU UTFPR</title>
-        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
     </head>
     <body>
     
 
             <picture>
-                <source media="(min-width: 640px)" srcset="utfpr.png" > <!--banner grande-->
-                <img src="utfpr.png" alt="Banner"> <!--banner peq-->
+                <source media="(min-width: 640px)" srcset="../assets/utfpr.png" > <!--banner grande-->
+                <img src="../assets/utfpr.png" alt="Banner"> <!--banner peq-->
             </picture>
 
 
@@ -68,9 +67,22 @@ if (!empty($_SESSION['logado']) && $_SESSION['logado']) {
     <hr>
     <br>
     
+    <?php        
+        if (!isset($_SESSION['array'])){
+            $array =[];
+        }
+        else{
+            $array = $_SESSION['array'];
+        }
+    ?>
+
+
+
+
+
 <footer>
     <address>
-        UTFPR<BR>
+        UTFPR<br>
         R. Doutor Washington Subtil Chueire, 330<br>
         Jardim Carvalho<br>
         Ponta Grossa<br>

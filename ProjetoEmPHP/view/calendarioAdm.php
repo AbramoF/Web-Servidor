@@ -13,14 +13,14 @@ if(empty($_SESSION['logado']) || $_SESSION['logado']==false)
     <head>
         <meta charset='utf-8'>
         <title>RU UTFPR</title>
-        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
     </head>
     <body>
     
 
             <picture>
-                <source media="(min-width: 640px)" srcset="utfpr.png" > <!--banner grande-->
-                <img src="utfpr.png" alt="Banner"> <!--banner peq-->
+                <source media="(min-width: 640px)" srcset="../assets/utfpr.png" > <!--banner grande-->
+                <img src="../assets/utfpr.png" alt="Banner"> <!--banner peq-->
             </picture>
 
 
