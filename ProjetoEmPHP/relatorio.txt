@@ -1,0 +1,14 @@
+Abramo Floriolli, Gustavo Silva Ruiz, Guilherme Portela Meller
+
+Encontramos problemas na hora de manipular os arrays, pois nao conseguimos acessar o valor
+ de cada posição (acredito que por ter criado um array com nomes nas posições ao invés de números), assim ficou faltando e/ou com erro na hora
+ de mostrar o conteudo de cada cada refeição(cardapioDia.view.php e cardapioDiaAdm.view.php) e não conseguimos tratar o conteúdo das mesmas,
+ possibilitando a criação de mais de uma refeição por horario(janta e almoço), também não lembramos de colocar um control para o login.
+
+Tecnologias utilizadas: HTML, CSS e PHP.
+Ferramentas utilizadas: VSCode e XAMPP.
+
+HTML - Abramo e Guilherme
+PHP - Abramo e Gustavo
+CSS - Guilherme e Gustavo
+

@@ -1,28 +1,31 @@
-
-body {        /*estilo do corpo*/
+body {
+  /*estilo do corpo*/
   font-size: 22px;
   color: rgb(0, 0, 0);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(255, 255, 255);
-  margin:0;
+  margin: 0;
 }
-footer{  /*estilo do foot*/
+
+footer {
+  /*estilo do foot*/
   font-size: 20px;
   font-family: 'Times New Roman', Times, serif;
 }
 
-ul { /*comeco do nav*/
+ul {
+  /*comeco do nav*/
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: rgb(55, 52, 53);
-  }
-  
+}
+
 li {
   float: left;
 }
-  
+
 li a {
   display: block;
   color: rgb(254, 203, 41);
@@ -30,18 +33,21 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-  
+
 li a:hover:not(.active) {
   background-color: rgba(254, 203, 41, 0.784);
   color: rgb(55, 52, 53);
 }
-  
+
 .active {
   background-color: rgb(254, 203, 41);
-  color:rgb(55, 52, 53);
-} /*fim do nav*/
+  color: rgb(55, 52, 53);
+}
 
-h1,h2{
+/*fim do nav*/
+
+h1,
+h2 {
   color: rgb(254, 203, 41);
   display: block;
   text-align: center;
@@ -51,44 +57,52 @@ h1,h2{
   margin-right: auto;
   background-color: rgb(55, 52, 53);
 }
-   
 
-table{     /*cardapio principal inicio*/
+
+table {
+  /*cardapio principal inicio*/
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
 }
 
-td,th{
+td,
+th {
   border-bottom: 1px solid #000;
   padding: 8px;
   text-align: center;
 }
-tr:hover{  
+
+tr:hover {
   background-color: rgba(254, 203, 41);
 }
 
-tr:hover:not(.head){
+tr:hover:not(.head) {
   background-color: rgba(254, 203, 41, 0.584);
 }
 
-.head{
+.head {
   background-color: rgb(254, 203, 41);
-}       /*cardapio fim*/
+}
 
-input[type=text],select{/*form cadastro do cardapio*/
+/*cardapio fim*/
+
+input[type=text],
+select {
+  /*form cadastro do cardapio*/
   width: auto;
-  padding:12px 14px;
-  margin:8px 0;
+  padding: 12px 14px;
+  margin: 8px 0;
   display: inline-block;
   border: 2px solid rgb(55, 52, 53);
   box-sizing: border-box;
 }
 
-input[type=password]{/*form cadastro do cardapio*/
+input[type=password] {
+  /*form cadastro do cardapio*/
   width: auto;
-  padding:12px 14px;
-  margin:8px 0;
+  padding: 12px 14px;
+  margin: 8px 0;
   display: inline-block;
   border: 2px solid rgb(55, 52, 53);
   box-sizing: border-box;
@@ -122,7 +136,7 @@ div {
   padding: 4px;
 }
 
-.flex-container{
+.flex-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,7 +145,7 @@ div {
   margin-top: 3rem;
 }
 
-.right{
+.right {
   float: right;
 }
 

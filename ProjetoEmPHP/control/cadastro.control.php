@@ -3,14 +3,13 @@
 session_start();
 
 if(empty($_SESSION['logado']) || $_SESSION['logado']==false){
-    header('Location: ../view/login.php');
+    header('Location: ../view/login.view.php');
 }
 else{
 
 $repetido=false;
     
 
-    //print_r($_POST); die();
     if(!empty($_POST['carn']) && !empty($_POST['veg'])){
            
         $sal1 = $_POST['sal1'];
@@ -38,7 +37,6 @@ $repetido=false;
                     if($key->$dia==$x){
                 if($cardapio->dia==$x){
                     if($key->dia==$x){
-                        $_SESSION['erro']=20;
                         $repetido=1;
                     }
                 }            
@@ -56,9 +54,7 @@ if($repetido!=true)
 array_push($array, $cardapio);
 
 $_SESSION['array'] = $array;
-header("Location: ../view/cadCardapioAdm.php");
-}
-//implementar o erro se nao tem todos os dados necesssarios
+header("Location: ../view/cadCardapioAdm.view.php");
 }
 
-?>
+}
