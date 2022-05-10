@@ -58,14 +58,14 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
 
 
                 <div>
-                    <label for="carn">Proteína : </label>
-                    <input type="text" id="carn" name="carn" required placeholder="Opção carnívora...">
+                    <label for="carn">Carne do dia : </label>
+                    <input type="text" id="carn" name="carn" required placeholder="Opção de carne...">
                 </div>
 
 
 
                 <div>
-                    <label for="veg">Proteína Vegetariana : </label>
+                    <label for="veg">Opção Vegetariana : </label>
                     <input type="text" id="veg" name="veg" required placeholder="Opção vegetariana...">
                 </div>
 
@@ -84,22 +84,22 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
                     <select name="dia" title="dia" required>
 
                         <option value="1">Segunda-feira - Almoço</option>
-                        <option value="2">Segunda-feira - Janta</option>
+                        <option value="2">Segunda-feira - Jantar</option>
 
                         <option value="3">Terça-feira - Almoço</option>
-                        <option value="4">Terça-feira - Janta</option>
+                        <option value="4">Terça-feira - Jantar</option>
 
                         <option value="5">Quarta-feira - Almoço</option>
-                        <option value="6">Quarta-feira - Janta</option>
+                        <option value="6">Quarta-feira - Jantar</option>
 
                         <option value="7">Quinta-feira - Almoço</option>
-                        <option value="8">Quinta-feira - Janta</option>
+                        <option value="8">Quinta-feira - Jantar</option>
 
                         <option value="9">Sexta-feira - Almoço</option>
-                        <option value="10">Sexta-feira - Janta</option>
+                        <option value="10">Sexta-feira - Jantar</option>
 
                         <option value="11">Sábado - Almoço</option>
-                        <option value="12">Sábado - Janta</option>
+                        <option value="12">Sábado - Jantar</option>
 
                     </select>
                 </div>
