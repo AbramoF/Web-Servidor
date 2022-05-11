@@ -33,7 +33,7 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
 
         <div class="flex-container">
             <br>
-            <form action="..\control\cadastro.control.php" method="post">
+            <form action="..\controller\cadastro.controller.php" method="post">
 
                 <br>
 
