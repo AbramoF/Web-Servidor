@@ -11,13 +11,7 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
 
 <html>
 
-<head>
-    <meta charset='utf-8'>
-    <title>RU UTFPR</title>
-    <link rel='stylesheet' type='text/css' media='screen' href='../style.css'>
-</head>
-
-<body>
+    <?php include ('../templates/header.php') ?>
 
 
     <picture>
@@ -115,16 +109,5 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
         <hr>
         <br>
 
-        <footer>
-            <address>
-                UTFPR<BR>
-                R. Doutor Washington Subtil Chueire, 330<br>
-                Jardim Carvalho<br>
-                Ponta Grossa<br>
-                (42)4002-8922
-            </address>
-        </footer>
-
-</body>
-
+        <?php include ('../templates/footer.php') ?>
 </html>
