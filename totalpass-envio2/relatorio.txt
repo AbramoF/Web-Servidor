@@ -1,0 +1,19 @@
+Integrantes: Mairon Lucas Slusarz (2163330) e Matheus Rigoni Galvão (2163357)
+Nesta segunda entrega do projeto, pode ser realizado o cadastro de novos usuários. Dentro da plataforma, o usuário pode cadastrar novas contas as quais deseja armazenar senha e login, assim como gerar uma senha aleatória, editar os dados dessa conta ou exclui-la.
+
+Funcionalidades faltantes e bugs:
+Caso o usuário tente acessar qualquer controller através do preenchimento de caminho pelo navegador, não será possível por falha de inclusão de arquivos;
+As Exceptions sao capturadas, mas algumas podem gerar bugs.
+
+Atividades realizadas pelos membros:
+Mairon Lucas Slusarz: 
+    Implementou o mecanismo de rota utilizando o SimpleRouter, configurou o autoload,
+    alterou os arquivos relacionados a login e cadastro para virarem classes.
+    Contribuiu com a criação do script para gerar o banco, assim como as classes relacionadas. 
+    Implementou uma classe de criptografia para utilizar nos dados de conta e de usuário. 
+    Contribuiu com outros ajustes relacionados a homepage e pop-ups de confirmações;
+
+Matheus Rigoni Galvão: 
+    Desenvolveu as funções do banco e sua integracao com a view e novos controllers
+    para insercao, edicao, exclusao de contas, buscas, edição dos dados do usuario 
+    e exclusão da conta do usuario.
