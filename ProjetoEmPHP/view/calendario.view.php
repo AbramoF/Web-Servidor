@@ -4,6 +4,7 @@
 
     <?php include ('../templates/header.php') ?>
 
+
     <picture>
         <source media="(min-width: 640px)" srcset="../assets/utfpr.png">
         <img src="../assets/utfpr.png" alt="Banner">
@@ -14,10 +15,32 @@
         <ul>
             <li><a href="cardapioDia.view.php">Cardápio Do Dia</a></li>
             <li><a class="active" href="calendario.view.php">Calendário</a></li>
+            <?php
+                session_start();
+                if (isset($_SESSION['logado'])){
+            ?>
+                <li><a href="cadCardapio.view.php">Cadastrar Cardápio</a></li>
+            <?php
+                }
+            ?>
             <li class="right"><a href="contato.view.php">Contato</a></li>
-            <li class="right"><a href="login.view.php">Login</a></li>
+            <?php
+                if (isset($_SESSION['logado'])){
+            ?>
+                <li class="right"><a href="login.view.php">Logout</a></li>
+            <?php
+                }
+            ?>
+            <?php
+                if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
+            ?>
+                <li class="right"><a href="login.view.php">Login</a></li>
+            <?php
+                }
+            ?>
         </ul>
     </nav>
+
 
     <br>
 
@@ -36,7 +59,6 @@
         </picture>
     </div>
 
-    <br>
     <hr>
     <br>
 

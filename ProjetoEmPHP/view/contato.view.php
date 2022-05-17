@@ -15,8 +15,30 @@
         <ul>
             <li><a href="cardapioDia.view.php">Cardápio Do Dia</a></li>
             <li><a href="calendario.view.php">Calendário</a></li>
+            <?php
+                session_start();
+                if (isset($_SESSION['logado'])){
+            ?>
+                <li><a href="cadCardapio.view.php">Cadastrar Cardápio</a></li>
+            <?php
+                }
+            ?>
             <li class="right"><a class="active" href="contato.view.php">Contato</a></li>
-            <li class="right"><a href="login.view.php">Login</a></li>
+            <?php
+                if (isset($_SESSION['logado'])){
+            ?>
+                <li class="right"><a href="login.view.php">Logout</a></li>
+            <?php
+                }
+            ?>
+            <?php
+                if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
+            ?>
+                <li class="right"><a href="login.view.php">Login</a></li>
+            <?php
+                }
+            ?>
+                
         </ul>
     </nav>
     <br>
@@ -29,5 +51,5 @@
     <br>
 
     <?php include ('../templates/footer.php') ?>
-    
+
 </html>

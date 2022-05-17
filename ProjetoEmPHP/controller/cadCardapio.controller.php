@@ -54,7 +54,7 @@ if($repetido!=true)
 array_push($array, $cardapio);
 
 $_SESSION['array'] = $array;
-header("Location: ../view/cadCardapioAdm.view.php");
+header("Location: ../view/cadCardapio.view.php");
 }
 
 }

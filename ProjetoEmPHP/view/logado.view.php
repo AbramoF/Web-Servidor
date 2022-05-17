@@ -21,10 +21,10 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false) {
 
     <nav>
         <ul>
-            <li><a href="cardapioDiaAdm.view.php">Cardápio Do Dia</a></li>
-            <li><a href="calendarioAdm.view.php">Calendário</a></li>
-            <li><a href="cadCardapioAdm.view.php">Cadastrar Cardápio</a></li>
-            <li class="right"><a href="contatoAdm.view.php">Contato</a></li>
+            <li><a href="cardapioDia.view.php">Cardápio Do Dia</a></li>
+            <li><a href="calendario.view.php">Calendário</a></li>
+            <li><a href="cadCardapio.view.php">Cadastrar Cardápio</a></li>
+            <li class="right"><a href="contato.view.php">Contato</a></li>
             <li class="right"><a class="active" href="../logout.php">Logout</a></li>
         </ul>
     </nav>
