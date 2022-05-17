@@ -23,8 +23,9 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
                 <li><a href="cardapioDia.view.php">Cardápio Do Dia</a></li>
                 <li><a href="calendario.view.php">Calendário</a></li>
                 <li><a class="active" href="cadCardapio.view.php">Cadastrar Cardápio</a></li>
+                <li><a href="cadCalendario.view.php">Cadastrar Calendário</a></li>
                 <li class="right"><a href="contato.view.php">Contato</a></li>
-                <li class="right"><a href="login.view.php">Logout</a></li>
+                <li class="right"><a href="logado.view.php">Logout</a></li>
             </ul>
         </nav>
 

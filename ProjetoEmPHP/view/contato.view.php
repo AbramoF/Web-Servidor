@@ -17,9 +17,10 @@
             <li><a href="calendario.view.php">Calendário</a></li>
             <?php
                 session_start();
-                if (isset($_SESSION['logado'])){
+                if (isset($_SESSION['logado']) && $_SESSION['usuario'] == 'Administrador'){
             ?>
                 <li><a href="cadCardapio.view.php">Cadastrar Cardápio</a></li>
+                <li><a href="cadCalendario.view.php">Cadastrar Calendário</a></li>
             <?php
                 }
             ?>
@@ -27,7 +28,7 @@
             <?php
                 if (isset($_SESSION['logado'])){
             ?>
-                <li class="right"><a href="login.view.php">Logout</a></li>
+                <li class="right"><a href="logado.view.php">Logout</a></li>
             <?php
                 }
             ?>
