@@ -25,15 +25,18 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false) {
             <li><a href="calendario.view.php">Calendário</a></li>
             <li><a href="cadCardapio.view.php">Cadastrar Cardápio</a></li>
             <li class="right"><a href="contato.view.php">Contato</a></li>
-            <li class="right"><a class="active" href="../logout.php">Logout</a></li>
+            <li class="right"><a class="active">Logout</a></li>
         </ul>
     </nav>
 
     <br>
-    <div>
-        Você já esta logado!
-
-
+    <div class="flex-container" style="max-width: 25%">
+        <form class="box-logout" method = "post" action ="../logout.php">
+            Deseja Realizar Logout?
+            <div class="button">
+                <input class="submit-button" type="submit" value="Logout">
+            </div>
+        </form>
     </div>
 
     <br>

@@ -156,6 +156,13 @@ div {
   padding: 2rem 3rem;
 }
 
+.box-logout {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 3rem 3rem;
+}
+
 .submit-button {
   width: 50% !important;
 }
