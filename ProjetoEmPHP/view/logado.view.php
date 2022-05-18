@@ -54,7 +54,7 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false) {
         <form class="box-logout" method = "post" action ="../logout.php">
             Deseja Realizar Logout?
             <div class="button">
-                <input class="submit-button" type="submit" value="Logout">
+                <input class="submit-button" type="submit" value="Sim">
             </div>
         </form>
     </div>
