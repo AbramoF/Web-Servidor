@@ -98,6 +98,18 @@ select {
   box-sizing: border-box;
 }
 
+input[type=link],
+select {
+  /*form cadastro do calendario*/
+  width: 26rem;
+  height: 3rem;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid rgb(55, 52, 53);
+  box-sizing:border-box;
+}
+
+
 input[type=password] {
   /*form cadastro do cardapio*/
   width: auto;
@@ -136,6 +148,12 @@ div {
   padding: 4px;
 }
 
+iframe{
+  width: 100rem;
+  height: 132rem;
+  overflow: auto;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -149,6 +167,15 @@ div {
   float: right;
 }
 
+.flex-calendario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100rem;
+  min-height: 132rem;
+  margin-top: 3rem;
+}
 
 .box-login {
   display: flex;

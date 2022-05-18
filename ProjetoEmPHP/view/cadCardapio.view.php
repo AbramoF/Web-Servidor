@@ -77,23 +77,19 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
                     Dia da semana:
                     <select name="dia" title="dia" required>
 
-                        <option value="1">Segunda-feira - Almoço</option>
-                        <option value="2">Segunda-feira - Jantar</option>
+                        <option value="0">Segunda-feira - Almoço</option>
+                        <option value="1">Terça-feira - Almoço</option>
+                        <option value="2">Quarta-feira - Almoço</option>
+                        <option value="3">Quinta-feira - Almoço</option>
+                        <option value="4">Sexta-feira - Almoço</option>
+                        
+                        <option disabled="disabled" value="10">-------------------------------</option>
 
-                        <option value="3">Terça-feira - Almoço</option>
-                        <option value="4">Terça-feira - Jantar</option>
-
-                        <option value="5">Quarta-feira - Almoço</option>
-                        <option value="6">Quarta-feira - Jantar</option>
-
-                        <option value="7">Quinta-feira - Almoço</option>
+                        <option value="5">Segunda-feira - Jantar</option>
+                        <option value="6">Terça-feira - Jantar</option>
+                        <option value="7">Quarta-feira - Jantar</option>
                         <option value="8">Quinta-feira - Jantar</option>
-
-                        <option value="9">Sexta-feira - Almoço</option>
-                        <option value="10">Sexta-feira - Jantar</option>
-
-                        <option value="11">Sábado - Almoço</option>
-                        <option value="12">Sábado - Jantar</option>
+                        <option value="9">Sexta-feira - Jantar</option>
 
                     </select>
                 </div>

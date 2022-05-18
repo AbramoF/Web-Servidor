@@ -1,9 +1,13 @@
 <?php
-
+$linkcalendario = $_POST['linkcalendario'] ?? '';
+echo $linkcalendario;
 session_start();
 
-if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
-    header('Location: login.view.php')
+if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
+    header('Location: login.view.php');
+    
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -33,13 +37,15 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
 
         <div class="flex-container">
             <br>
-            <form action="..\controller\cadClendario.controller.php" method="POST">
-
+            <form action="cadCalendario.view.php" method="POST">
                 
-                <input type="submit" value="Submit">
+                <input type="link" id="link" name="linkcalendario" required placeholder="Digite o link do calendário Novo...">
+                
+                <div class="button">
+                    <input class="submit-button" type="submit" value="Enviar">
+                </div>
             </form>
         </div>
-
 
         <br>
         <hr>

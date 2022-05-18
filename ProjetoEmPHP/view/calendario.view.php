@@ -1,3 +1,8 @@
+<?php>
+$linkcalendario;
+echo $linkcalendario;
+?>
+
 <!DOCTYPE html>
 
 <html>
@@ -20,7 +25,8 @@
                 if (isset($_SESSION['logado']) && $_SESSION['usuario'] == 'Administrador'){
             ?>
                 <li><a href="cadCardapio.view.php">Cadastrar Cardápio</a></li>
-                <li><a href="cadCalendario.view.php">Cadastrar Calendário</a></li>
+                <li><a href="cadCalendario.view.php">Cadastrar Cardápio</a></li>
+                
             <?php
                 }
             ?>
@@ -45,19 +51,8 @@
 
     <br>
 
-    <div class="flex-container">
-        <picture>
-            <source media="(min-width: 640px)" srcset="../assets/cal1.png">
-            <img src="../assets/cal1.png" alt="Banner">
-        </picture>
-        <picture>
-            <source media="(min-width: 640px)" srcset="../assets/cal2.png">
-            <img src="../assets/cal2.png" alt="Banner">
-        </picture>
-        <picture>
-            <source media="(min-width: 640px)" srcset="../assets/cal3.png">
-            <img src="../assets/cal3.png" alt="Banner">
-        </picture>
+    <div class="flex-calendario">
+        <iframe src="https://sei.utfpr.edu.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=2735591&id_orgao_publicacao=0"></iframe>
     </div>
 
     <hr>
