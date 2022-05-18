@@ -1,5 +1,5 @@
 <?php>
-$linkcalendario;
+$linkcalendario = $_GET['linkcalendario'];
 echo $linkcalendario;
 ?>
 

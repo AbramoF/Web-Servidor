@@ -12,3 +12,9 @@ HTML - Abramo e Guilherme
 PHP - Abramo e Gustavo
 CSS - Guilherme e Gustavo
 
+arrumar index
+models
+controllers
+rotas
+composer
+Orientação
