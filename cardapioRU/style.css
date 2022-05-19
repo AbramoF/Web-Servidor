@@ -1,0 +1,201 @@
+body {
+  /*estilo do corpo*/
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+}
+
+footer {
+  /*estilo do foot*/
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+  /*comeco do nav*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(55, 52, 53);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(254, 203, 41);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgba(254, 203, 41, 0.784);
+  color: rgb(55, 52, 53);
+}
+
+.active {
+  background-color: rgb(254, 203, 41);
+  color: rgb(55, 52, 53);
+}
+
+/*fim do nav*/
+
+h1,
+h2 {
+  color: rgb(254, 203, 41);
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(55, 52, 53);
+}
+
+
+table {
+  /*cardapio principal inicio*/
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td,
+th {
+  border-bottom: 1px solid #000;
+  padding: 8px;
+  text-align: center;
+}
+
+tr:hover {
+  background-color: rgba(254, 203, 41);
+}
+
+tr:hover:not(.head) {
+  background-color: rgba(254, 203, 41, 0.584);
+}
+
+.head {
+  background-color: rgb(254, 203, 41);
+}
+
+/*cardapio fim*/
+
+input[type=text],
+select {
+  /*form cadastro do cardapio*/
+  width: auto;
+  padding: 12px 14px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid rgb(55, 52, 53);
+  box-sizing: border-box;
+}
+
+input[type=link],
+select {
+  /*form cadastro do calendario*/
+  width: 26rem;
+  height: 3rem;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid rgb(55, 52, 53);
+  box-sizing:border-box;
+}
+
+
+input[type=password] {
+  /*form cadastro do cardapio*/
+  width: auto;
+  padding: 12px 14px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid rgb(55, 52, 53);
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 29rem;
+  background-color: rgb(254, 203, 41);
+  color: rgb(55, 52, 53);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  width: 29rem;
+  background-color: rgb(55, 52, 53);
+  color: rgb(254, 203, 41);
+}
+
+/*form cadastro do cardapio fim*/
+
+div {
+
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 4px;
+}
+
+iframe{
+  width: 100rem;
+  height: 132rem;
+  overflow: auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 40%;
+  margin-top: 3rem;
+}
+
+.right {
+  float: right;
+}
+
+.flex-calendario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100rem;
+  min-height: 132rem;
+  margin-top: 3rem;
+}
+
+.box-login {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem;
+}
+
+.box-logout {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 3rem 3rem;
+}
+
+.submit-button {
+  width: 50% !important;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

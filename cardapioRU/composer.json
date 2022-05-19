@@ -1,0 +1,16 @@
+{
+    "name": "guilh/cardapio-ru",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guilherme Portela Meller",
+            "email": "guilhermeportelameller@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": ["./"]
+    },
+    "require": {
+        "pecee/simple-router": "4.3.7.2"
+    }
+}
