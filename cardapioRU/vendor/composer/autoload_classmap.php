@@ -90,4 +90,6 @@ return array(
     'TestBootManager' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Managers/TestBootManager.php',
     'TestRouter' => $vendorDir . '/pecee/simple-router/tests/TestRouter.php',
     'indexController' => $baseDir . '/controllers/indexController.php',
+    'loginController' => $baseDir . '/controllers/loginController.php',
+    'redirectController' => $baseDir . '/controllers/redirectController.php',
 );

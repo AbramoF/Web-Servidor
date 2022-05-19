@@ -3,6 +3,6 @@
 class indexController{
 
     public function index(){
-        require '../views/cardapioDia.view.php';
+        require 'views/cardapioDia.view.php';
     }
 }

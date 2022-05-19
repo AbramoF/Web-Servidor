@@ -3,7 +3,7 @@ $linkcalendario = $_POST['linkcalendario'] ?? '';
 session_start();
 
 if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
-    header('Location: login.view.php');
+    header('Location: /Login');
     
 }
 
@@ -13,7 +13,7 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
 
 <html>
 
-    <?php include ('../templates/header.php') ?>
+    <?php include ('templates/header.php') ?>
 
 
     <picture>
@@ -23,12 +23,12 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
 
         <nav>
             <ul>
-                <li><a href="cardapioDia.view.php">Cardápio Do Dia</a></li>
-                <li><a href="calendario.view.php">Calendário</a></li>
-                <li><a href="cadCardapio.view.php">Cadastrar Cardápio</a></li>
-                <li><a class="active" href="cadCalendario.view.php">Cadastrar Calendário</a></li>
-                <li class="right"><a href="contato.view.php">Contato</a></li>
-                <li class="right"><a href="logado.view.php">Logout</a></li>
+                <li><a href="/">Cardápio Do Dia</a></li>
+                <li><a href="/Calendario">Calendário</a></li>
+                <li><a href="/CadCardapio">Cadastrar Cardápio</a></li>
+                <li><a class="active" href="/CadCalendario">Cadastrar Calendário</a></li>
+                <li class="right"><a href="/Contato">Contato</a></li>
+                <li class="right"><a href="/Logout">Logout</a></li>
             </ul>
         </nav>
 
@@ -36,7 +36,7 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
 
         <div class="flex-container">
             <br>
-            <form action="cadCalendario.view.php" method="POST">
+            <form action="/CadCalendario" method="POST">
                 
                 <input type="link" id="link" name="linkcalendario" required placeholder="Digite o link do calendário Novo...">
                 
@@ -50,5 +50,5 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
         <hr>
         <br>
 
-        <?php include ('../templates/footer.php') ?>
+        <?php include ('templates/footer.php') ?>
 </html>

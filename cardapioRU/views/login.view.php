@@ -1,30 +1,9 @@
-<?php
-$usuario = $_POST['loginUser'] ?? '';
-$senha = $_POST['loginSenha'] ?? '';
-$erro = false;
-
-session_start();
-
-// checar se as credenciais do usuario estão ok
-if ($usuario == 'admin' && $senha == 'qwe123') {
-    $_SESSION['logado'] = true;
-    $_SESSION['usuario'] = 'Administrador';
-    $_SESSION['erro'] = false;
-}else if(!empty($_POST)){
-    $erro=true;
-}
-
-//Checar se o usuário já está logado
-if (!empty($_SESSION['logado']) && $_SESSION['logado']) {
-    header('Location: cardapioDia.view.php');
-}
-?>
 
 <!DOCTYPE html>
 
 <html>
 
-    <?php include ('../templates/header.php') ?>
+    <?php include ('templates/header.php') ?>
 
 
     <picture>
@@ -35,10 +14,10 @@ if (!empty($_SESSION['logado']) && $_SESSION['logado']) {
 
     <nav>
         <ul>
-            <li><a href="cardapioDia.view.php">Cardápio Do Dia</a></li>
-            <li><a href="calendario.view.php">Calendário</a></li>
-            <li class="right"><a href="contato.view.php">Contato</a></li>
-            <li class="right"><a class="active" href="login.view.php">Login</a></li>
+            <li><a href="/">Cardápio Do Dia</a></li>
+            <li><a href="/Calendario">Calendário</a></li>
+            <li class="right"><a href="/Contato">Contato</a></li>
+            <li class="right"><a class="active" href="/Login">Login</a></li>
         </ul>
     </nav>
 
@@ -49,7 +28,7 @@ if (!empty($_SESSION['logado']) && $_SESSION['logado']) {
                         <strong>Usuário ou Senha inválidos! Tente novamente.</strong>
                 <div>
             <?php endif; ?>
-        <form class="box-login" action="login.view.php" method="POST">
+        <form class="box-login" action="/LoginUser" method="POST">
 
             <label for="login">Usuário : </label>
             <input type="text" id="username" name="loginUser" required placeholder="Digite seu usuário...">
@@ -67,6 +46,6 @@ if (!empty($_SESSION['logado']) && $_SESSION['logado']) {
     <br>
 
 
-    <?php include ('../templates/footer.php') ?>
+    <?php include ('templates/footer.php') ?>
 
 </html>

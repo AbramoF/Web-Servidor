@@ -3,14 +3,14 @@
 session_start();
 
 if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
-    header('Location: login.view.php');
+    header('Location: /Login');
 ?>
 
 <!DOCTYPE html>
 
 <html>
 
-    <?php include ('../templates/header.php') ?>
+    <?php include ('templates/header.php') ?>
 
 
     <picture>
@@ -19,12 +19,12 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
 
         <nav>
             <ul>
-                <li><a href="cardapioDia.view.php">Cardápio Do Dia</a></li>
-                <li><a href="calendario.view.php">Calendário</a></li>
-                <li><a class="active" href="cadCardapio.view.php">Cadastrar Cardápio</a></li>
-                <li><a href="cadCalendario.view.php">Cadastrar Calendário</a></li>
-                <li class="right"><a href="contato.view.php">Contato</a></li>
-                <li class="right"><a href="logado.view.php">Logout</a></li>
+                <li><a href="/">Cardápio Do Dia</a></li>
+                <li><a href="/Calendario">Calendário</a></li>
+                <li><a class="active" href="/CadCardapio">Cadastrar Cardápio</a></li>
+                <li><a href="/CadCalendario">Cadastrar Calendário</a></li>
+                <li class="right"><a href="/Contato">Contato</a></li>
+                <li class="right"><a href="/Logout">Logout</a></li>
             </ul>
         </nav>
 
@@ -32,7 +32,7 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
 
         <div class="flex-container">
             <br>
-            <form action="..\controller\cadCardapioController.php" method="post">
+            <form action="controller\cadCardapioController.php" method="post">
 
                 <br>
 
@@ -104,5 +104,5 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
         <hr>
         <br>
 
-        <?php include ('../templates/footer.php') ?>
+        <?php include ('templates/footer.php') ?>
 </html>
