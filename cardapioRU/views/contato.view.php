@@ -47,10 +47,8 @@
     <div> Entre em contato conosco! Qualquer duvida, sugestão ou reclamação!</div>
     <div> Através do número (42)4002-8922.</div>
     <div>SAC 08001234114.</div>
-    <br>
-    <hr>
-    <br>
 
+    
     <?php include ('templates/footer.php') ?>
 
 </html>

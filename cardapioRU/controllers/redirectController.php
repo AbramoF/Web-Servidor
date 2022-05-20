@@ -3,7 +3,9 @@
 class redirectController{
 
     public function carregarLogin(){
-        $erro;
+        $usuario= '';
+        $senha= '';
+        $erro = '';
         require 'views/login.view.php';
     }
 
@@ -20,7 +22,7 @@ class redirectController{
     }
 
     public function carregarLogout(){
-        require 'logout.php';
+        require 'views/logado.view.php';
     }
 
     public function carregarContato(){

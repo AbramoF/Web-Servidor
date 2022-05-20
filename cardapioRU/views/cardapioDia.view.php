@@ -89,11 +89,6 @@
     </table>
 
 
-
-    <br>
-    <hr>
-    <br>
-
     <?php include ('templates/footer.php') ?>
 
 </html>

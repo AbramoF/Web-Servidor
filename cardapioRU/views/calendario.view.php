@@ -50,9 +50,6 @@
         <iframe src="https://sei.utfpr.edu.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=2735591&id_orgao_publicacao=0"></iframe>
     </div>
 
-    <hr>
-    <br>
-
     <?php include ('templates/footer.php') ?>
 
 </html>

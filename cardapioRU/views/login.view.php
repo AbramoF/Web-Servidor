@@ -1,4 +1,11 @@
-
+<?php
+if (!(session_status() === PHP_SESSION_ACTIVE)){
+session_start();
+}
+if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) {
+    header('Location: /');
+}
+?>
 <!DOCTYPE html>
 
 <html>
@@ -23,13 +30,12 @@
 
     <br>
     <div style="max-width: 40%">
-            <?php if ($erro):?>
+        <?php if ($erro != '') : ?>
                 <div style="background: #fafae1; padding: 15px; margin-bottom: 24px;">
                         <strong>Usuário ou Senha inválidos! Tente novamente.</strong>
                 <div>
-            <?php endif; ?>
+        <?php endif; ?>
         <form class="box-login" action="/LoginUser" method="POST">
-
             <label for="login">Usuário : </label>
             <input type="text" id="username" name="loginUser" required placeholder="Digite seu usuário...">
 
@@ -41,11 +47,7 @@
         </form>
     </div>
 
-    <br>
-    <hr>
-    <br>
-
-
+    
     <?php include ('templates/footer.php') ?>
 
 </html>

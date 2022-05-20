@@ -32,41 +32,84 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
 
         <div class="flex-container">
             <br>
-            <form action="controller\cadCardapioController.php" method="post">
+            <form action="/" method="post">
 
                 <br>
 
                 <div>
-                    <label for="sal1">Primeira opção de salada : </label>
-                    <input type="text" id="sal1" name="sal1" required placeholder="Primeira opção de salada...">
+
+                    Primeira opção de Salada:
+                    <select name="sal1" title="sal1" required>
+
+                        <option value="0">Alface</option>
+                        <option value="1">Tomate</option>
+                        <option value="2">Rúcula</option>
+                        <option value="3">Cenoura</option>
+                        <option value="4">Beterraba</option>
+
+                    </select>
                 </div>
 
 
 
                 <div>
-                    <label for="sal2">Segunda opção de salada : </label>
-                    <input type="text" id="sal2" name="sal2" required placeholder="Segunda opção de salada...">
+
+                    Segunda opção de Salada:
+                    <select name="sal2" title="sal2" required>
+
+                        <option value="0">Alface</option>
+                        <option value="1">Tomate</option>
+                        <option value="2">Rúcula</option>
+                        <option value="3">Cenoura</option>
+                        <option value="4">Beterraba</option>
+
+                    </select>
                 </div>
 
 
 
                 <div>
-                    <label for="carn">Carne do dia : </label>
-                    <input type="text" id="carn" name="carn" required placeholder="Opção de carne...">
+
+                    Opção de Carne:
+                    <select name="carn" title="carn" required>
+
+                        <option value="0">Frango</option>
+                        <option value="1">Carne Moída</option>
+                        <option value="2">Bisteca</option>
+                        <option value="3">Quibe</option>
+                        <option value="4">Picadinho</option>
+
+                    </select>
                 </div>
 
 
 
                 <div>
-                    <label for="veg">Opção Vegetariana : </label>
-                    <input type="text" id="veg" name="veg" required placeholder="Opção vegetariana...">
+
+                    Opção de Vegetariana:
+                    <select name="veg" title="veg" required>
+
+                        <option value="0">Proteína de Soja</option>
+                        <option value="1">Grão de Bico</option>
+                        <option value="2">Ovo Frito</option>
+
+                    </select>
                 </div>
 
 
 
                 <div>
-                    <label for="acomp"></label>Acompanhamento : </label>
-                    <input type="text" id="acomp" name="acompa" required placeholder="Opção acompanhamento...">
+
+                    Acompanhamento:
+                    <select name="acomp" title="acomp" required>
+
+                        <option value="0">Batata Salsa</option>
+                        <option value="1">Vegetais Cozidos</option>
+                        <option value="2">Macarrão</option>
+                        <option value="3">Farofa</option>
+                        <option value="4">Purê de Batata</option>
+
+                    </select>
                 </div>
 
 
@@ -98,11 +141,6 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
                 <input type="submit" value="Submit">
             </form>
         </div>
-
-
-        <br>
-        <hr>
-        <br>
 
         <?php include ('templates/footer.php') ?>
 </html>

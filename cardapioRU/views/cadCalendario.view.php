@@ -37,7 +37,9 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
         <div class="flex-container">
             <br>
             <form action="/CadCalendario" method="POST">
-                
+                <div>
+                    Insira o Link do Novo Calendário:
+                </div>
                 <input type="link" id="link" name="linkcalendario" required placeholder="Digite o link do calendário Novo...">
                 
                 <div class="button">
@@ -45,10 +47,6 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
                 </div>
             </form>
         </div>
-
-        <br>
-        <hr>
-        <br>
 
         <?php include ('templates/footer.php') ?>
 </html>

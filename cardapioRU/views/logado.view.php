@@ -1,11 +1,3 @@
-<?php
-session_start();
-
-if (empty($_SESSION['logado']) || $_SESSION['logado'] == false) {
-    header('Location: /Login');
-}
-?>
-
 <!DOCTYPE html>
 
 <html>
@@ -24,6 +16,7 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false) {
             <li><a href="/">Cardápio Do Dia</a></li>
             <li><a href="/Calendario">Calendário</a></li>
             <?php
+                session_start();
                 if (isset($_SESSION['logado']) && $_SESSION['usuario'] == 'Administrador'){
             ?>
                 <li><a href="/CadCardapio">Cadastrar Cardápio</a></li>
@@ -59,9 +52,6 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false) {
         </form>
     </div>
 
-    <br>
-    <hr>
-    <br>
 
     <?php include ('templates/footer.php') ?>
 

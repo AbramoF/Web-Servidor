@@ -10,4 +10,5 @@
     Router::get('/Logout', 'redirectController@carregarLogout');
     Router::get('/Contato', 'redirectController@carregarContato');
     Router::post('/LoginUser', 'loginController@verificarLogin');
+    
     Router::start();
