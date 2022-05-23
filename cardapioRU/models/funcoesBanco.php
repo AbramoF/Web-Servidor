@@ -25,7 +25,7 @@ class funcoesBanco
     public function insertLink($linkcalendario){
         try{
             $bd = Conexao::get();
-            $query = $bd->prepare("UPDATE linkcalendario SET link = :link WHERE link = :link");
+            $query = $bd->prepare("UPDATE linkcalendario SET link = :link WHERE id_link=0");
             $query->bindParam(':link', $linkcalendario->link);
             $query->execute();
         } catch(Exception $e){

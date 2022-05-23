@@ -45,10 +45,10 @@ UNLOCK TABLES;
 -- Table structure for table `linkcardapio`
 --
 
-DROP TABLE IF EXISTS `linkcardapio`;
+DROP TABLE IF EXISTS `linkcalendario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `linkcardapio` (
+CREATE TABLE `linkcalendario` (
   `id_link` int(11) NOT NULL AUTO_INCREMENT,
   `link` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
   PRIMARY KEY (`id_link`)
@@ -56,12 +56,12 @@ CREATE TABLE `linkcardapio` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `linkcardapio`
+-- Dumping data for table `linkcalendario`
 --
-LOCK TABLES `linkcardapio` WRITE;
-/*!40000 ALTER TABLE `linkcardapio` DISABLE KEYS */;
-INSERT INTO `diasdasemana` VALUES (0,'https://sei.utfpr.edu.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=2735591&id_orgao_publicacao=0');
-/*!40000 ALTER TABLE `linkcardapio` ENABLE KEYS */;
+LOCK TABLES `linkcalendario` WRITE;
+/*!40000 ALTER TABLE `linkcalendario` DISABLE KEYS */;
+INSERT INTO `id_link` VALUES (0,'https://sei.utfpr.edu.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=2735591&id_orgao_publicacao=0');
+/*!40000 ALTER TABLE `linkcalendario` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --

@@ -22,7 +22,7 @@
                 if (isset($_SESSION['logado']) && $_SESSION['usuario'] == 'Administrador'){
             ?>
                 <li><a href="/CadCardapio">Cadastrar Cardápio</a></li>
-                <li><a href="/CadCalendario">Cadastrar Cardápio</a></li>
+                <li><a href="/CadCalendario">Cadastrar Calendário</a></li>
                 
             <?php
                 }else if(isset($_SESSION['logado']) && $_SESSION['usuario'] == 'AdminRU'){
