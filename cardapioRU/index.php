@@ -11,5 +11,6 @@
     Router::get('/Contato', 'redirectController@carregarContato');
     Router::post('/LoginUser', 'loginController@verificarLogin');
     Router::post('/SendCalendario', 'cadCalendarioController@sendCalendario');
+    Router::post('/SendCardapio', 'cadCardapioController@sendCardapio');
     
     Router::start();

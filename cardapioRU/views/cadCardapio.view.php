@@ -39,7 +39,7 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
 
         <div class="flex-container">
             <br>
-            <form action="/" method="post">
+            <form action="/SendCardapio" method="POST">
 
                 <br>
 
@@ -48,11 +48,11 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
                     Primeira opção de Salada:
                     <select name="sal1" title="sal1" required>
 
-                        <option value="0">Alface</option>
-                        <option value="1">Tomate</option>
-                        <option value="2">Rúcula</option>
-                        <option value="3">Cenoura</option>
-                        <option value="4">Beterraba</option>
+                        <option value="Alface">Alface</option>
+                        <option value="Tomate">Tomate</option>
+                        <option value="Rúcula">Rúcula</option>
+                        <option value="Cenoura">Cenoura</option>
+                        <option value="Beterraba">Beterraba</option>
 
                     </select>
                 </div>
@@ -64,11 +64,11 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
                     Segunda opção de Salada:
                     <select name="sal2" title="sal2" required>
 
-                        <option value="0">Alface</option>
-                        <option value="1">Tomate</option>
-                        <option value="2">Rúcula</option>
-                        <option value="3">Cenoura</option>
-                        <option value="4">Beterraba</option>
+                        <option value="Alface">Alface</option>
+                        <option value="Tomate">Tomate</option>
+                        <option value="Rúcula">Rúcula</option>
+                        <option value="Cenoura">Cenoura</option>
+                        <option value="Beterraba">Beterraba</option>
 
                     </select>
                 </div>
@@ -80,11 +80,11 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
                     Opção de Carne:
                     <select name="carn" title="carn" required>
 
-                        <option value="0">Frango</option>
-                        <option value="1">Carne Moída</option>
-                        <option value="2">Bisteca</option>
-                        <option value="3">Quibe</option>
-                        <option value="4">Picadinho</option>
+                        <option value="Frango">Frango</option>
+                        <option value="Carne Moída">Carne Moída</option>
+                        <option value="Bisteca">Bisteca</option>
+                        <option value="Quibe">Quibe</option>
+                        <option value="Picadinho">Picadinho</option>
 
                     </select>
                 </div>
@@ -96,9 +96,9 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
                     Opção de Vegetariana:
                     <select name="veg" title="veg" required>
 
-                        <option value="0">Proteína de Soja</option>
-                        <option value="1">Grão de Bico</option>
-                        <option value="2">Ovo Frito</option>
+                        <option value="Proteina de Soja">Proteína de Soja</option>
+                        <option value="Grão de Bico">Grão de Bico</option>
+                        <option value="Ovo Frito">Ovo Frito</option>
 
                     </select>
                 </div>
@@ -110,11 +110,11 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
                     Acompanhamento:
                     <select name="acomp" title="acomp" required>
 
-                        <option value="0">Batata Salsa</option>
-                        <option value="1">Vegetais Cozidos</option>
-                        <option value="2">Macarrão</option>
-                        <option value="3">Farofa</option>
-                        <option value="4">Purê de Batata</option>
+                        <option value="Batata Salsa">Batata Salsa</option>
+                        <option value="Vegetais Cozidos">Vegetais Cozidos</option>
+                        <option value="Macarrão">Macarrão</option>
+                        <option value="Farofa">Farofa</option>
+                        <option value="Purê de Batata">Purê de Batata</option>
 
                     </select>
                 </div>

@@ -107,11 +107,13 @@ class ComposerStaticInitb3aafffac6f72bc1e0a66adb46282b35
         'TestRouter' => __DIR__ . '/..' . '/pecee/simple-router/tests/TestRouter.php',
         'Usuario' => __DIR__ . '/../..' . '/models/usuario.php',
         'cadCalendarioController' => __DIR__ . '/../..' . '/controllers/cadCalendarioController.php',
+        'cadCardapioController' => __DIR__ . '/../..' . '/controllers/cadCardapioController.php',
         'funcoesBanco' => __DIR__ . '/../..' . '/models/funcoesBanco.php',
         'indexController' => __DIR__ . '/../..' . '/controllers/indexController.php',
         'link' => __DIR__ . '/../..' . '/models/link.php',
         'loginController' => __DIR__ . '/../..' . '/controllers/loginController.php',
         'redirectController' => __DIR__ . '/../..' . '/controllers/redirectController.php',
+        'refeicao' => __DIR__ . '/../..' . '/models/refeicao.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

@@ -59,35 +59,23 @@
             <th>Quarta-feira</th>
             <th>Quinta-feira</th>
             <th>Sexta-feira</th>
-            <th>Sabádo</th>
         </tr>
         <tr>
             <td>11:00 - 14:00</td>
-            <?php
-
-            if (isset($_SESSION['array'])) {    //funcao para printar o a semana, mas nao esta funcionando porque nao consegui mexer muito bem com o array
-                $array1 = $_SESSION['array'];
-                foreach ($array1 as $array) {
-                    foreach ($array as $indice) {
-                        echo "<td>";
-                        print_r($indice);
-                        echo "<td>";
-                    }
-                }
-            }
-
-
-            ?>
-
+            <td>seg</td> <!-- Segunda Feira - Almoço -->
+            <td>ter</td> <!-- Terça Feira - Almoço -->
+            <td>qua</td> <!-- Quarta Feira - Almoço -->
+            <td>qui</td> <!-- Quinta Feira - Almoço -->
+            <td>sex</td> <!-- Sexta Feira - Almoço -->
         </tr>
+        
         <tr>
             <td>17:30 - 20:30</td> <!-- printar a parte da noite -->
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>seg</td> <!-- Segunda Feira - Jantar -->
+            <td>ter</td> <!-- Terça Feira - Jantar -->
+            <td>qua</td> <!-- Quarta Feira - Jantar -->
+            <td>qui</td> <!-- Quinta Feira - Jantar -->
+            <td>sex</td> <!-- Sexta Feira - Jantar -->
         </tr>
 
     </table>

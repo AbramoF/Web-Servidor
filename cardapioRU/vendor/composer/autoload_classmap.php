@@ -92,9 +92,11 @@ return array(
     'TestRouter' => $vendorDir . '/pecee/simple-router/tests/TestRouter.php',
     'Usuario' => $baseDir . '/models/usuario.php',
     'cadCalendarioController' => $baseDir . '/controllers/cadCalendarioController.php',
+    'cadCardapioController' => $baseDir . '/controllers/cadCardapioController.php',
     'funcoesBanco' => $baseDir . '/models/funcoesBanco.php',
     'indexController' => $baseDir . '/controllers/indexController.php',
     'link' => $baseDir . '/models/link.php',
     'loginController' => $baseDir . '/controllers/loginController.php',
     'redirectController' => $baseDir . '/controllers/redirectController.php',
+    'refeicao' => $baseDir . '/models/refeicao.php',
 );
