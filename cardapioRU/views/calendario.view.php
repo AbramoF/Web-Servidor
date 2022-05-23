@@ -16,7 +16,9 @@
             <li><a href="/">Cardápio Do Dia</a></li>
             <li><a class="active" href="/Calendario">Calendário</a></li>
             <?php
+                if (!(session_status() === PHP_SESSION_ACTIVE)){
                 session_start();
+                }
                 if (isset($_SESSION['logado']) && $_SESSION['usuario'] == 'Administrador'){
             ?>
                 <li><a href="/CadCardapio">Cadastrar Cardápio</a></li>
@@ -51,7 +53,7 @@
     <br>
 
     <div class="flex-calendario">
-        <iframe src="https://sei.utfpr.edu.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=2735591&id_orgao_publicacao=0"></iframe>
+        <iframe src="<?php echo $linkcalendario->link ?>"></iframe>
     </div>
 
     <?php include ('templates/footer.php') ?>

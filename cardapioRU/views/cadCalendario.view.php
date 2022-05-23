@@ -1,12 +1,10 @@
 <?php
-$linkcalendario = $_POST['linkcalendario'] ?? '';
-session_start();
-
-if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
-    header('Location: /Login');
-    
+if (!(session_status() === PHP_SESSION_ACTIVE)){
+    session_start();
 }
-
+if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
+header('Location: /Login');
+}
 ?>
 
 <!DOCTYPE html>
@@ -36,11 +34,11 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
 
         <div class="flex-container">
             <br>
-            <form action="/CadCalendario" method="POST">
+            <form action="/SendCalendario" method="POST">
                 <div>
                     Insira o Link do Novo Calendário:
                 </div>
-                <input type="link" id="link" name="linkcalendario" required placeholder="Digite o link do calendário Novo...">
+                <input type="link" name="linkcalendario" required placeholder="Digite o link do calendário Novo...">
                 
                 <div class="button">
                     <input class="submit-button" type="submit" value="Enviar">

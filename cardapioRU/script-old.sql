@@ -42,29 +42,6 @@ INSERT INTO `diasdasemana` VALUES (0,'Segunda-Feira-Almoco'),(1,'Terca-Feira-Alm
 UNLOCK TABLES;
 
 --
--- Table structure for table `linkcardapio`
---
-
-DROP TABLE IF EXISTS `linkcardapio`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `linkcardapio` (
-  `id_link` int(11) NOT NULL AUTO_INCREMENT,
-  `link` varchar(150) CHARACTER SET utf8mb4 NOT NULL,
-  PRIMARY KEY (`id_link`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `linkcardapio`
---
-LOCK TABLES `linkcardapio` WRITE;
-/*!40000 ALTER TABLE `linkcardapio` DISABLE KEYS */;
-INSERT INTO `diasdasemana` VALUES (0,'https://sei.utfpr.edu.br/sei/publicacoes/controlador_publicacoes.php?acao=publicacao_visualizar&id_documento=2735591&id_orgao_publicacao=0');
-/*!40000 ALTER TABLE `linkcardapio` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `refeicoes`
 --
 
@@ -152,4 +129,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-23  0:55:31
+-- Dump completed on 2022-05-22 20:38:54

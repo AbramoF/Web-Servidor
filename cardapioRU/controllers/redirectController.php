@@ -10,6 +10,8 @@ class redirectController{
     }
 
     public function carregarCalendario(){
+        $bf = new funcoesBanco;
+        $linkcalendario = $bf->buscarLink();
         require 'views/calendario.view.php';
     }
 
