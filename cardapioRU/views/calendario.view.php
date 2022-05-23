@@ -23,6 +23,10 @@
                 <li><a href="/CadCalendario">Cadastrar Cardápio</a></li>
                 
             <?php
+                }else if(isset($_SESSION['logado']) && $_SESSION['usuario'] == 'AdminRU'){
+            ?>
+                <li><a href="/CadCardapio">Cadastrar Cardápio</a></li>
+            <?php
                 }
             ?>
             <li class="right"><a href="/Contato">Contato</a></li>

@@ -22,7 +22,14 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
                 <li><a href="/">Cardápio Do Dia</a></li>
                 <li><a href="/Calendario">Calendário</a></li>
                 <li><a class="active" href="/CadCardapio">Cadastrar Cardápio</a></li>
+                <?php
+                if (isset($_SESSION['logado']) && $_SESSION['usuario'] == 'Administrador'){
+            ?>
                 <li><a href="/CadCalendario">Cadastrar Calendário</a></li>
+                
+            <?php
+                }
+            ?>
                 <li class="right"><a href="/Contato">Contato</a></li>
                 <li class="right"><a href="/Logout">Logout</a></li>
             </ul>
