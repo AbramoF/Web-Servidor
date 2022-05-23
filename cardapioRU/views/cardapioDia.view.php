@@ -14,7 +14,9 @@
             <li><a class="active" href="/">Cardápio Do Dia</a></li>
             <li><a href="/Calendario">Calendário</a></li>
             <?php
-                session_start();
+                if (!(session_status() === PHP_SESSION_ACTIVE)){
+                    session_start();
+                }
                 if (isset($_SESSION['logado']) && $_SESSION['usuario'] == 'Administrador'){
             ?>
                 <li><a href="/CadCardapio">Cadastrar Cardápio</a></li>
@@ -62,20 +64,98 @@
         </tr>
         <tr>
             <td>11:00 - 14:00</td>
-            <td>seg</td> <!-- Segunda Feira - Almoço -->
-            <td>ter</td> <!-- Terça Feira - Almoço -->
-            <td>qua</td> <!-- Quarta Feira - Almoço -->
-            <td>qui</td> <!-- Quinta Feira - Almoço -->
-            <td>sex</td> <!-- Sexta Feira - Almoço -->
+            <td>
+                <?php 
+                    foreach($sm as $yuta){
+                        echo $yuta->refeicao;
+                        echo nl2br("\n");
+                    } 
+                ?>
+            </td> <!-- Segunda Feira - Almoço -->
+
+            <td>
+                <?php 
+                    foreach($tm as $yuta){
+                    echo $yuta->refeicao;
+                    echo nl2br("\n");
+                    } 
+                ?>
+            </td> <!-- Terça Feira - Almoço -->
+
+            <td>
+                <?php 
+                    foreach($qam as $yuta){
+                    echo $yuta->refeicao;
+                    echo nl2br("\n");
+                    } 
+                ?>
+            </td> <!-- Quarta Feira - Almoço -->
+
+            <td>
+                <?php 
+                    foreach($qim as $yuta){
+                    echo $yuta->refeicao;
+                    echo nl2br("\n");
+                    } 
+                ?>
+            </td> <!-- Quinta Feira - Almoço -->
+
+            <td>
+                <?php 
+                    foreach($sem as $yuta){
+                    echo $yuta->refeicao;
+                    echo nl2br("\n");
+                    } 
+                ?>
+            </td> <!-- Sexta Feira - Almoço -->
         </tr>
         
         <tr>
             <td>17:30 - 20:30</td> <!-- printar a parte da noite -->
-            <td>seg</td> <!-- Segunda Feira - Jantar -->
-            <td>ter</td> <!-- Terça Feira - Jantar -->
-            <td>qua</td> <!-- Quarta Feira - Jantar -->
-            <td>qui</td> <!-- Quinta Feira - Jantar -->
-            <td>sex</td> <!-- Sexta Feira - Jantar -->
+            <td>
+                <?php 
+                    foreach($st as $yuta){
+                    echo $yuta->refeicao;
+                    echo nl2br("\n");
+                    } 
+                ?>
+            </td> <!-- Segunda Feira - Jantar -->
+
+            <td>
+                <?php 
+                    foreach($tt as $yuta){
+                    echo $yuta->refeicao;
+                    echo nl2br("\n");
+                    } 
+                ?>
+            </td> <!-- Terça Feira - Jantar -->
+
+            <td>
+                <?php 
+                    foreach($qat as $yuta){
+                    echo $yuta->refeicao;
+                    echo nl2br("\n");
+                    } 
+                ?>
+            </td> <!-- Quarta Feira - Jantar -->
+
+            <td>
+                <?php 
+                    foreach($qit as $yuta){
+                    echo $yuta->refeicao;
+                    echo nl2br("\n");
+                    } 
+                ?>
+            </td> <!-- Quinta Feira - Jantar -->
+
+            <td>
+                <?php 
+                    foreach($set as $yuta){
+                    echo $yuta->refeicao;
+                    echo nl2br("\n");
+                    } 
+                ?>
+            </td> <!-- Sexta Feira - Jantar -->
         </tr>
 
     </table>

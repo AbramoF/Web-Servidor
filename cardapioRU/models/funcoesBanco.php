@@ -43,4 +43,11 @@ class funcoesBanco
         }
     }
 
+    public function buscarRefeicao($diasemana){
+        $bd = Conexao::get();
+            $query = $bd->query("SELECT * FROM refeicoes WHERE fk_dia_semana = $diasemana");
+            $dia = $query->fetchAll(PDO::FETCH_OBJ);
+            return $dia;
+    }
+
 }
