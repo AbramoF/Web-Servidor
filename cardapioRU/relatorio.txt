@@ -1,0 +1,29 @@
+Abramo Floriolli, Gustavo Silva Ruiz, Guilherme Portela Meller
+
+De acordo com nossos testes todas as funcionalidades estão implantadas corretamente. O banco está preenchido préviamente para um "update" dos dados facilitado.
+Funcionalidades do Sitema:
+Sem Login:
+-Acessar o cardápio semanal do RU
+-Acessar o calendário anual da UTFPR para verificar se o RU estará aberto em determinado dia
+-Acessar uma aba com as informações de contato do RU
+
+Logado como Administrador:
+-Mesmas funcionalidades de "Sem Login"
+-Cadastro de Cardápio
+-Cadastro de Calendário
+
+Logado como Administrador RU:
+-Mesmas funcionalidades de "Sem Login"
+-Cadastro de Cardápio
+
+Todos os cadastros informados, bem como o usuário, senha e cargo estão cadastrados no Banco de dados "webservidor" e são acessados no sistema para escrita e leitura. Exceto usuário e senha que só podem ser alterados "na mão" no Banco (pelo fato de existirem apenas dois usuários).
+
+
+Tecnologias utilizadas: HTML, CSS, PHP, Autoload, SimpleRouter.
+Ferramentas utilizadas: VSCode, XAMPP, MySQL Workbench, TablePlus.
+
+HTML - Abramo e Guilherme
+PHP - Abramo e Gustavo
+CSS - Abramo e Gustavo
+Autoload - Guilherme e Gustavo
+SimpleRouter - Guilherme e Abramo

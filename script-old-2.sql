@@ -91,7 +91,7 @@ CREATE TABLE `refeicoes` (
 
 LOCK TABLES `refeicoes` WRITE;
 /*!40000 ALTER TABLE `refeicoes` DISABLE KEYS */;
-INSERT INTO `refeicoes` VALUES (0,'Alface',0,0),(1,'Acelga',0,1),(2,'Frango',0,2),(3,'Proteina de Soja',0,3),(4,'Batata Salsa',0,4),(5,'Alface',1,0),(6,'Acelga',1,1),(7,'Frango',1,2),(8,'Proteina de Soja',1,3),(9,'Batata Salsa',1,4),(10,'Alface',2,0),(11,'Acelga',2,1),(12,'Frango',2,2),(13,'Proteina de Soja',2,3),(14,'Batata Salsa',2,4),(15,'Alface',3,0),(16,'Acelga',3,1),(17,'Frango',3,2),(18,'Proteina de Soja',3,3),(19,'Batata Salsa',3,4),(20,'Alface',4,0),(21,'Acelga',4,1),(22,'Frango',4,2),(23,'Proteina de Soja',4,3),(24,'Batata Salsa',4,4),(25,'Alface',5,0),(26,'Acelga',5,1),(27,'Frango',5,2),(28,'Proteina de Soja',5,3),(29,'Batata Salsa',5,4),(30,'Alface',6,0),(31,'Acelga',6,1),(32,'Frango',6,2),(33,'Proteina de Soja',6,3),(34,'Batata Salsa',6,4),(35,'Alface',7,0),(36,'Acelga',7,1),(37,'Frango',7,2),(38,'Proteina de Soja',7,3),(39,'Batata Salsa',7,4),(40,'Alface',8,0),(41,'Acelga',8,1),(42,'Frango',8,2),(43,'Proteina de Soja',8,3),(44,'Batata Salsa',8,4),(45,'Alface',9,0),(46,'Acelga',9,1),(47,'Frango',9,2),(48,'Proteina de Soja',9,3),(49,'Batata Salsa',9,4);
+INSERT INTO `refeicoes` VALUES (0,'salada1',0,0),(1,'salada2',0,1),(2,'carne',0,2),(3,'vegetariano',0,3),(4,'acompanhamento',0,4),(5,'salada1',1,0),(6,'salada2',1,1),(7,'carne',1,2),(8,'vegetariano',1,3),(9,'acompanhamento',1,4),(10,'salada1',2,0),(11,'salada2',2,1),(12,'carne',2,2),(13,'vegetariano',2,3),(14,'acompanhamento',2,4),(15,'salada1',3,0),(16,'salada2',3,1),(17,'carne',3,2),(18,'vegetariano',3,3),(19,'acompanhamento',3,4),(20,'salada1',4,0),(21,'salada2',4,1),(22,'carne',4,2),(23,'vegetariano',4,3),(24,'acompanhamento',4,4),(25,'salada1',5,0),(26,'salada2',5,1),(27,'carne',5,2),(28,'vegetariano',5,3),(29,'acompanhamento',5,4),(30,'salada1',6,0),(31,'salada2',6,1),(32,'carne',6,2),(33,'vegetariano',6,3),(34,'acompanhamento',6,4),(35,'salada1',7,0),(36,'salada2',7,1),(37,'carne',7,2),(38,'vegetariano',7,3),(39,'acompanhamento',7,4),(40,'salada1',8,0),(41,'salada2',8,1),(42,'carne',8,2),(43,'vegetariano',8,3),(44,'acompanhamento',8,4),(45,'salada1',9,0),(46,'salada2',9,1),(47,'carne',9,2),(48,'vegetariano',9,3),(49,'acompanhamento',9,4);
 /*!40000 ALTER TABLE `refeicoes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -154,4 +154,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-23 20:51:48
+-- Dump completed on 2022-05-23 16:57:30

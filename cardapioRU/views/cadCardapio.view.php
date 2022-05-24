@@ -64,8 +64,8 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
                     Segunda opção de Salada:
                     <select name="sal2" title="sal2" required>
 
-                        <option value="Alface">Alface</option>
-                        <option value="Tomate">Tomate</option>
+                        <option value="Acelga">Acelga</option>
+                        <option value="Brócolis">Brócolis</option>
                         <option value="Rúcula">Rúcula</option>
                         <option value="Cenoura">Cenoura</option>
                         <option value="Beterraba">Beterraba</option>
