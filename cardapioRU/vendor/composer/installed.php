@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '90753645712175d6c41313abce7a5c29009bf95d',
+        'reference' => NULL,
         'name' => 'guilh/cardapio-ru',
         'dev' => true,
     ),
     'versions' => array(
         'guilh/cardapio-ru' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '90753645712175d6c41313abce7a5c29009bf95d',
+            'reference' => NULL,
             'dev_requirement' => false,
         ),
         'pecee/simple-router' => array(
