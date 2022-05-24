@@ -1,7 +1,8 @@
 Para a utilização do sistema são necessários alguns pré requisitos, bem como a criação do banco de dados.
 
 Pré Requisitos:
-Ter o xamppp instalado e executar o MySQL e Apache.
+Ter o xamppp instalado (Disponível em : "https://www.apachefriends.org/pt_br/download.html") e executar o MySQL e Apache.
+Instalar o "Composer", disponível em : "https://getcomposer.org/download/"
 
 Criação do Banco:
 Executar o Script "script.sql" no prompt do seu SQL ou em seu gerenciador próprio para a criação do banco.
