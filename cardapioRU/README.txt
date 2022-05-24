@@ -19,3 +19,9 @@ Agora acesse em seu navegador o endereço "localhost:8080".
 
 Tudo Pronto! Pode utilizar o Sistema!
 
+Usuário Administrador: admin
+Senha Administrador: qwe123
+
+Usúario Administrador RU: adminru
+Senha Administrador RU: utfpr2022
+
