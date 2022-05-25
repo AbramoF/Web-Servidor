@@ -1,6 +1,6 @@
 <?php
 
-class indexController{
+class IndexController{
 
     public function index(){
         $bf = new funcoesBanco;

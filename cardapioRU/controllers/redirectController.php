@@ -1,6 +1,6 @@
 <?php
 
-class redirectController{
+class RedirectController{
 
     public function carregarLogin(){
         $usuario= '';

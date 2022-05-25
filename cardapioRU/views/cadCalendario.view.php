@@ -3,7 +3,7 @@ if (!(session_status() === PHP_SESSION_ACTIVE)){
     session_start();
 }
 if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
-header('Location: /Login');
+header('Location: /login');
 }
 ?>
 
@@ -22,11 +22,11 @@ header('Location: /Login');
         <nav>
             <ul>
                 <li><a href="/">Cardápio Do Dia</a></li>
-                <li><a href="/Calendario">Calendário</a></li>
-                <li><a href="/CadCardapio">Cadastrar Cardápio</a></li>
-                <li><a class="active" href="/CadCalendario">Cadastrar Calendário</a></li>
-                <li class="right"><a href="/Contato">Contato</a></li>
-                <li class="right"><a href="/Logout">Logout</a></li>
+                <li><a href="/calendario">Calendário</a></li>
+                <li><a href="/cadCardapio">Cadastrar Cardápio</a></li>
+                <li><a class="active" href="/cadCalendario">Cadastrar Calendário</a></li>
+                <li class="right"><a href="/contato">Contato</a></li>
+                <li class="right"><a href="/logout">Logout</a></li>
             </ul>
         </nav>
 
@@ -34,7 +34,7 @@ header('Location: /Login');
 
         <div class="flex-container">
             <br>
-            <form action="/SendCalendario" method="POST">
+            <form action="/sendCalendario" method="POST">
                 <div>
                     Insira o Link do Novo Calendário:
                 </div>
