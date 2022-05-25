@@ -8,8 +8,6 @@ Criação do Banco:
 Executar o Script "script.sql" no prompt do seu SQL ou em seu gerenciador próprio para a criação do banco.
 
 Executar no Terminal do Visual Studio Code:
-//"composer init"
-//"composer instal autoload"
 "composer require pecee/simple-router"
 "composer dump-autoload"
 
