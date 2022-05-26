@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb3aafffac6f72bc1e0a66adb46282b35
+class ComposerStaticInitd72e556e16ec0af76188f9cb88525562
 {
     public static $prefixLengthsPsr4 = array (
         'P' => 
@@ -22,12 +22,12 @@ class ComposerStaticInitb3aafffac6f72bc1e0a66adb46282b35
 
     public static $classMap = array (
         'BootManagerTest' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/BootManagerTest.php',
-        'CadCalendarioController' => __DIR__ . '/../..' . '/controllers/cadCalendarioController.php',
-        'CadCardapioController' => __DIR__ . '/../..' . '/controllers/cadCardapioController.php',
+        'CalendarioController' => __DIR__ . '/../..' . '/controllers/cadCalendarioController.php',
+        'CardapioController' => __DIR__ . '/../..' . '/controllers/cadCardapioController.php',
         'ClassLoaderTest' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/ClassLoaderTest.php',
-        'ComposerAutoloaderInitb3aafffac6f72bc1e0a66adb46282b35' => __DIR__ . '/..' . '/composer/autoload_real.php',
+        'ComposerAutoloaderInitd72e556e16ec0af76188f9cb88525562' => __DIR__ . '/..' . '/composer/autoload_real.php',
         'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
-        'Composer\\Autoload\\ComposerStaticInitb3aafffac6f72bc1e0a66adb46282b35' => __DIR__ . '/..' . '/composer/autoload_static.php',
+        'Composer\\Autoload\\ComposerStaticInitd72e556e16ec0af76188f9cb88525562' => __DIR__ . '/..' . '/composer/autoload_static.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Conexao' => __DIR__ . '/../..' . '/models/connect.php',
         'CsrfVerifierTest' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/CsrfVerifierTest.php',
@@ -119,9 +119,9 @@ class ComposerStaticInitb3aafffac6f72bc1e0a66adb46282b35
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb3aafffac6f72bc1e0a66adb46282b35::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb3aafffac6f72bc1e0a66adb46282b35::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitb3aafffac6f72bc1e0a66adb46282b35::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitd72e556e16ec0af76188f9cb88525562::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitd72e556e16ec0af76188f9cb88525562::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitd72e556e16ec0af76188f9cb88525562::$classMap;
 
         }, null, ClassLoader::class);
     }

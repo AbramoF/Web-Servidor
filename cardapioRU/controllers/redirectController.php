@@ -17,32 +17,6 @@ class RedirectController{
         require 'views/login.view.php';
     }
 
-    public function carregarCalendario(){
-        $bf = new funcoesBanco;
-        $linkcalendario = $bf->buscarLink();
-        require 'views/calendario.view.php';
-    }
-
-    public function carregarCadCalendario(){
-            if (!(session_status() === PHP_SESSION_ACTIVE)){
-                session_start();
-            }
-            if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
-                header('Location: /login');
-            }
-        require 'views/cadCalendario.view.php';
-    }
-
-    public function carregarCadCardapio(){
-        if (!(session_status() === PHP_SESSION_ACTIVE)){
-            session_start();
-        }
-        if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
-            header('Location: /login');
-        }
-        require 'views/cadCardapio.view.php';
-    }
-
     public function carregarLogout(){
         require 'views/logado.view.php';
     }

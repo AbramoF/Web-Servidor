@@ -1,6 +1,16 @@
 <?php
 
-class CadCardapioController{
+class CardapioController{
+    public function carregarCadCardapio(){
+        if (!(session_status() === PHP_SESSION_ACTIVE)){
+            session_start();
+        }
+        if (empty($_SESSION['logado']) || $_SESSION['logado'] == false){
+            header('Location: /login');
+        }
+        require 'views/cadCardapio.view.php';
+    }
+
     public function SendCardapio(){
         if(!isset($_SESSION)) 
         { 

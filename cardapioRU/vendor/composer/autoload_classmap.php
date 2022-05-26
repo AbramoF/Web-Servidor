@@ -7,12 +7,12 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'BootManagerTest' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/BootManagerTest.php',
-    'CadCalendarioController' => $baseDir . '/controllers/cadCalendarioController.php',
-    'CadCardapioController' => $baseDir . '/controllers/cadCardapioController.php',
+    'CalendarioController' => $baseDir . '/controllers/cadCalendarioController.php',
+    'CardapioController' => $baseDir . '/controllers/cadCardapioController.php',
     'ClassLoaderTest' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/ClassLoaderTest.php',
-    'ComposerAutoloaderInitb3aafffac6f72bc1e0a66adb46282b35' => $vendorDir . '/composer/autoload_real.php',
+    'ComposerAutoloaderInitd72e556e16ec0af76188f9cb88525562' => $vendorDir . '/composer/autoload_real.php',
     'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
-    'Composer\\Autoload\\ComposerStaticInitb3aafffac6f72bc1e0a66adb46282b35' => $vendorDir . '/composer/autoload_static.php',
+    'Composer\\Autoload\\ComposerStaticInitd72e556e16ec0af76188f9cb88525562' => $vendorDir . '/composer/autoload_static.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Conexao' => $baseDir . '/models/connect.php',
     'CsrfVerifierTest' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/CsrfVerifierTest.php',

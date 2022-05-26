@@ -3,16 +3,16 @@
     use Pecee\SimpleRouter\SimpleRouter as Router;
   
     Router::get('/', 'IndexController@index');
+    Router::get('/calendario', 'CalendarioController@carregarCalendario');
     Router::get('/login', 'RedirectController@carregarLogin');
-    Router::get('/calendario', 'RedirectController@carregarCalendario');
     Router::get('/logout', 'RedirectController@carregarLogout');
     Router::get('/contato', 'RedirectController@carregarContato');
     Router::post('/loginUser', 'LoginController@verificarLogin');
 
-    Router::get('/cadCalendario', 'RedirectController@carregarCadCalendario');
-    Router::get('/cadCardapio', 'RedirectController@carregarCadCardapio');
-    Router::post('/sendCalendario', 'CadCalendarioController@sendCalendario');
-    Router::post('/sendCardapio', 'CadCardapioController@sendCardapio');
+    Router::get('/cadCalendario', 'CalendarioController@carregarCadCalendario');
+    Router::get('/cadCardapio', 'CardapioController@carregarCadCardapio');
+    Router::post('/sendCalendario', 'CalendarioController@sendCalendario');
+    Router::post('/sendCardapio', 'CardapioController@sendCardapio');
     
     Router::error(function() {
 
