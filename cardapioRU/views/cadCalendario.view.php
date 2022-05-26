@@ -25,7 +25,7 @@
 
         <div class="flex-container">
             <br>
-            <form action="/sendCalendario" method="POST">
+            <form action="/SendCalendario" method="POST">
                 <div>
                     Insira o Link do Novo Calendário:
                 </div>
