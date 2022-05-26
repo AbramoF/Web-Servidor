@@ -16,9 +16,9 @@
     
     Router::error(function() {
 
-        header("Location: /404");
+        header("Location: /notFound");
         
     });
-    Router::get('/404', 'RedirectController@error404');
+    Router::get('/notFound', 'RedirectController@error404');
 
     Router::start();
