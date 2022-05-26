@@ -94,7 +94,7 @@ class ComposerStaticInitb3aafffac6f72bc1e0a66adb46282b35
         'Pecee\\SimpleRouter\\Route\\RouteUrl' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/RouteUrl.php',
         'Pecee\\SimpleRouter\\Router' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/Router.php',
         'Pecee\\SimpleRouter\\SimpleRouter' => __DIR__ . '/..' . '/pecee/simple-router/src/Pecee/SimpleRouter/SimpleRouter.php',
-        'RedirectController' => __DIR__ . '/../..' . '/controllers/RedirectController.php',
+        'RedirectController' => __DIR__ . '/../..' . '/controllers/redirectController.php',
         'RequestTest' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/RequestTest.php',
         'ResourceController' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/ResourceController.php',
         'ResponseException' => __DIR__ . '/..' . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Exception/ResponseException.php',

@@ -79,7 +79,7 @@ return array(
     'Pecee\\SimpleRouter\\Route\\RouteUrl' => $vendorDir . '/pecee/simple-router/src/Pecee/SimpleRouter/Route/RouteUrl.php',
     'Pecee\\SimpleRouter\\Router' => $vendorDir . '/pecee/simple-router/src/Pecee/SimpleRouter/Router.php',
     'Pecee\\SimpleRouter\\SimpleRouter' => $vendorDir . '/pecee/simple-router/src/Pecee/SimpleRouter/SimpleRouter.php',
-    'RedirectController' => $baseDir . '/controllers/RedirectController.php',
+    'RedirectController' => $baseDir . '/controllers/redirectController.php',
     'RequestTest' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/RequestTest.php',
     'ResourceController' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/ResourceController.php',
     'ResponseException' => $vendorDir . '/pecee/simple-router/tests/Pecee/SimpleRouter/Dummy/Exception/ResponseException.php',
