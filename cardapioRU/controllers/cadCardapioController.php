@@ -1,6 +1,6 @@
 <?php
 
-class cadCardapioController{
+class CadCardapioController{
     public function SendCardapio(){
         if(!isset($_SESSION)) 
         { 

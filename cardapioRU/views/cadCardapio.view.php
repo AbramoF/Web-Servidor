@@ -3,7 +3,7 @@ if (!(session_status() === PHP_SESSION_ACTIVE)){
     session_start();
 }
 if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
-    header('Location: /Login');
+    header('Location: /login');
 ?>
 
 <!DOCTYPE html>
@@ -20,18 +20,18 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
         <nav>
             <ul>
                 <li><a href="/">Cardápio Do Dia</a></li>
-                <li><a href="/Calendario">Calendário</a></li>
-                <li><a class="active" href="/CadCardapio">Cadastrar Cardápio</a></li>
+                <li><a href="/calendario">Calendário</a></li>
+                <li><a class="active" href="/cadCardapio">Cadastrar Cardápio</a></li>
                 <?php
                 if (isset($_SESSION['logado']) && $_SESSION['usuario'] == 'Administrador'){
             ?>
-                <li><a href="/CadCalendario">Cadastrar Calendário</a></li>
+                <li><a href="/cadCalendario">Cadastrar Calendário</a></li>
                 
             <?php
                 }
             ?>
-                <li class="right"><a href="/Contato">Contato</a></li>
-                <li class="right"><a href="/Logout">Logout</a></li>
+                <li class="right"><a href="/contato">Contato</a></li>
+                <li class="right"><a href="/logout">Logout</a></li>
             </ul>
         </nav>
 
@@ -39,7 +39,7 @@ if (empty($_SESSION['logado']) || $_SESSION['logado'] == false)
 
         <div class="flex-container">
             <br>
-            <form action="/SendCardapio" method="POST">
+            <form action="/sendCardapio" method="POST">
 
                 <br>
 

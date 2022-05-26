@@ -1,6 +1,6 @@
 <?php
 
-class cadCalendarioController{
+class CadCalendarioController{
     public function sendCalendario(){
         if(!isset($_SESSION)) 
         { 
@@ -11,7 +11,7 @@ class cadCalendarioController{
         $bdf = new funcoesBanco();
         $linkcalendario->link = $link;
         $bdf->insertLink($linkcalendario);
-        header("Location: /Calendario");
+        header("Location: /calendario");
     }
 
 }

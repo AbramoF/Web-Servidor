@@ -2,15 +2,15 @@
     require 'vendor/autoload.php';
     use Pecee\SimpleRouter\SimpleRouter as Router;
   
-    Router::get('/', 'indexController@index');
-    Router::get('/Login', 'redirectController@carregarLogin');
-    Router::get('/Calendario', 'redirectController@carregarCalendario');
-    Router::get('/CadCalendario', 'redirectController@carregarCadCalendario');
-    Router::get('/CadCardapio', 'redirectController@carregarCadCardapio');
-    Router::get('/Logout', 'redirectController@carregarLogout');
-    Router::get('/Contato', 'redirectController@carregarContato');
-    Router::post('/LoginUser', 'loginController@verificarLogin');
-    Router::post('/SendCalendario', 'cadCalendarioController@sendCalendario');
-    Router::post('/SendCardapio', 'cadCardapioController@sendCardapio');
+    Router::get('/', 'IndexController@index');
+    Router::get('/login', 'RedirectController@carregarLogin');
+    Router::get('/calendario', 'RedirectController@carregarCalendario');
+    Router::get('/cadCalendario', 'RedirectController@carregarCadCalendario');
+    Router::get('/cadCardapio', 'RedirectController@carregarCadCardapio');
+    Router::get('/logout', 'RedirectController@carregarLogout');
+    Router::get('/contato', 'RedirectController@carregarContato');
+    Router::post('/loginUser', 'LoginController@verificarLogin');
+    Router::post('/sendCalendario', 'CadCalendarioController@sendCalendario');
+    Router::post('/sendCardapio', 'CadCardapioController@sendCardapio');
     
     Router::start();

@@ -22,9 +22,9 @@ if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) {
     <nav>
         <ul>
             <li><a href="/">Cardápio Do Dia</a></li>
-            <li><a href="/Calendario">Calendário</a></li>
-            <li class="right"><a href="/Contato">Contato</a></li>
-            <li class="right"><a class="active" href="/Login">Login</a></li>
+            <li><a href="/calendario">Calendário</a></li>
+            <li class="right"><a href="/contato">Contato</a></li>
+            <li class="right"><a class="active" href="/login">Login</a></li>
         </ul>
     </nav>
 
@@ -35,7 +35,7 @@ if (isset($_SESSION['logado']) && $_SESSION['logado'] == true) {
                         <strong>Usuário ou Senha inválidos! Tente novamente.</strong>
                 <div>
         <?php endif; ?>
-        <form class="box-login" action="/LoginUser" method="POST">
+        <form class="box-login" action="/loginUser" method="POST">
             <label for="login">Usuário : </label>
             <input type="text" id="username" name="loginUser" required placeholder="Digite seu usuário...">
 
